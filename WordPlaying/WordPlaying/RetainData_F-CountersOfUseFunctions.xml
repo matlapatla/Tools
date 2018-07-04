@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="RetainData_F-CountersOfUseFunctions" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="RetainData_F.wStart                     RETAIN_DATA_F_T;" Name="RetainData_F.wStart" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="RetainData_F.dwSaveCycle                RETAIN_DATA_F_T;" Name="RetainData_F.dwSaveCycle" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="RetainData_F.dwCycleCounterCL1          RETAIN_DATA_F_T;" Name="RetainData_F.dwCycleCounterCL1" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="RetainData_F.dwCycleCounterCL2          RETAIN_DATA_F_T;" Name="RetainData_F.dwCycleCounterCL2" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="RetainData_F.dwCycleCounterCL3          RETAIN_DATA_F_T;" Name="RetainData_F.dwCycleCounterCL3" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="RetainData_F.dwCycleCounterCL4          RETAIN_DATA_F_T;" Name="RetainData_F.dwCycleCounterCL4" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="RetainData_F.diEneCom_AC1               RETAIN_DATA_F_T;" Name="RetainData_F.diEneCom_AC1" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="RetainData_F.diEneCom_AC2               RETAIN_DATA_F_T;" Name="RetainData_F.diEneCom_AC2" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="RetainData_F.diEneComAUX_AC1            RETAIN_DATA_F_T;" Name="RetainData_F.diEneComAUX_AC1" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="RetainData_F.diEneComAUX_AC2            RETAIN_DATA_F_T;" Name="RetainData_F.diEneComAUX_AC2" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="RetainData_F.diEneComMot_AC1            RETAIN_DATA_F_T;" Name="RetainData_F.diEneComMot_AC1" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="RetainData_F.diEneComMot_AC2            RETAIN_DATA_F_T;" Name="RetainData_F.diEneComMot_AC2" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="RetainData_F.diEneDis_AC1               RETAIN_DATA_F_T;" Name="RetainData_F.diEneDis_AC1" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="RetainData_F.diEneDis_AC2               RETAIN_DATA_F_T;" Name="RetainData_F.diEneDis_AC2" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="RetainData_F.diEneRec_AC1               RETAIN_DATA_F_T;" Name="RetainData_F.diEneRec_AC1" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="RetainData_F.diEneRec_AC2               RETAIN_DATA_F_T;" Name="RetainData_F.diEneRec_AC2" POU="" Einheit="DINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="RetainData_F.bEnd                       RETAIN_DATA_F_T;" Name="RetainData_F.bEnd" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="147A" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="-40A31  AMIT RRC-IO/001     DI  01  xFB_PantPosDown                     Panto down                         " Name="IO4_C2_26_IxFB_PantPosDown" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="-40A31  AMIT RRC-IO/001     DI  02  xFB_PantPosUp                       Panto up                           " Name="IO4_C2_26_IxFB_PantPosUp" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="-40A31  AMIT RRC-IO/001     DI  03  xFB_StatusOTZ_On                    OTZ ON                             " Name="IO4_C2_26_IxFB_StatusOTZ_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="-40A31  AMIT RRC-IO/001     DI  04  xFB_StatusOTZ_Grd                   OTZ Grounded                       " Name="IO4_C2_26_IxFB_StatusOTZ_Grd" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="-40A31  AMIT RRC-IO/001     DI  05  xFB_HSCB_Charged                    HCSB charged                       " Name="IO4_C2_26_IxFB_HSCB_Charged" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="-40A31  AMIT RRC-IO/001     DI  06  xFB_HSCB_On                         HCSB ON                            " Name="IO4_C2_26_IxFB_HSCB_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="-40A31  AMIT RRC-IO/001     DI  07  xFB_TrackBrTB                       KB1 feedback                       " Name="IO4_C2_26_IxFB_TrackBrTB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="-40A31  AMIT RRC-IO/001     DI  08  xFB_TrackBrMB1                      KB2 feedback                       " Name="IO4_C2_26_IxFB_TrackBrMB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="-40A31  AMIT RRC-IO/001     DI  09  xFB_HIS                             HIS                                " Name="IO4_C2_26_IxFB_HIS" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="-40A31  AMIT RRC-IO/001     DI  10  xFB_RTS                             Relay 34K01                        " Name="IO4_C2_26_IxFB_RTS" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="-40A31  AMIT RRC-IO/001     DI  11  xFB_Panto_Req                       Panto Req moving down -21K07       " Name="IO4_C2_26_IxFB_Panto_Req" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="-40A31  AMIT RRC-IO/001     DO  01  xREL_TrackB_1                       Activation KB1                     " Name="IO4_C2_26_QxREL_TrackB_1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="-40A31  AMIT RRC-IO/001     DO  02  xREL_TrackB_2                       Activation KB2                     " Name="IO4_C2_26_QxREL_TrackB_2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="-40A31  AMIT RRC-IO/001     DO  04  xREL_1stBogieSand                   Relay 71K02                        " Name="IO4_C2_26_QxREL_1stBogieSand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="-40A31  AMIT RRC-IO/001     DO  05  xREL_SandHeat_A                     Relay 71K05                        " Name="IO4_C2_26_QxREL_SandHeat_A" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="-40A31  AMIT RRC-IO/001     DO  06  xREL_2ndBogieSand                   Relay 71K03                        " Name="IO4_C2_26_QxREL_2ndBogieSand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="-40A31  AMIT RRC-IO/001     DO  08  xREL_PantoDown                      Relay 21K30                        " Name="IO4_C2_26_QxREL_PantoDown" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="-40A32  AMIT RRC-I/001      DI  01  xCB_Pant_OTZ                        Circuit breaker 21F01              " Name="IO5_C2_27_IxCB_Pant_OTZ" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="-40A32  AMIT RRC-I/001      DI  02  xCB_HSCB                            Circuit breaker 21F02              " Name="IO5_C2_27_IxCB_HSCB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="-40A32  AMIT RRC-I/001      DI  03  xCB_Standstill                      Circuit breaker 22F51              " Name="IO5_C2_27_IxCB_Standstill" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="-40A32  AMIT RRC-I/001      DI  04  xCB_TB_PUMP                         Circuit breaker 23F91              " Name="IO5_C2_27_IxCB_TB_PUMP" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="-40A32  AMIT RRC-I/001      DI  05  xCB_PUMP_MB1                        Circuit breaker 23F92              " Name="IO5_C2_27_IxCB_PUMP_MB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="-40A32  AMIT RRC-I/001      DI  06  xCB_TtrackBrCtrlTB                  Circuit breaker 23F50              " Name="IO5_C2_27_IxCB_TtrackBrCtrlTB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="-40A32  AMIT RRC-I/001      DI  07  xCB_TtrackBrTB                      Circuit breaker 23F51              " Name="IO5_C2_27_IxCB_TtrackBrTB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="-40A32  AMIT RRC-I/001      DI  08  xCB_TtrackBrMB1                     Circuit breaker 23F53              " Name="IO5_C2_27_IxCB_TtrackBrMB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="-40A32  AMIT RRC-I/001      DI  09  xCB_CC400_A1                        Circuit breaker 24F01              " Name="IO5_C2_27_IxCB_CC400_A1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="-40A32  AMIT RRC-I/001      DI  10  xCB_CC400_A2                        Circuit breaker 24F03              " Name="IO5_C2_27_IxCB_CC400_A2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="-40A32  AMIT RRC-I/001      DI  12  xCB_IsolMonitorRel                  Circuit breaker 31F02              " Name="IO5_C2_27_IxCB_IsolMonitorRel" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="-40A32  AMIT RRC-I/001      DI  13  xCB_BattChgr                        Circuit breaker 34F01              " Name="IO5_C2_27_IxCB_BattChgr" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="-40A32  AMIT RRC-I/001      DI  14  xCB_MainVent1                       Circuit breaker 34F02              " Name="IO5_C2_27_IxCB_MainVent1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="-40A32  AMIT RRC-I/001      DI  15  xCB_HVMeas                          Circuit breaker 34F04              " Name="IO5_C2_27_IxCB_HVMeas" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="-40A32  AMIT RRC-I/001      DI  16  xCB_USB_PWS1                        Circuit breaker 39F01              " Name="IO5_C2_27_IxCB_USB_PWS1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="-40A32  AMIT RRC-I/001      DI  17  xCB_EVR1                            Circuit breaker 43F01              " Name="IO5_C2_27_IxCB_EVR1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="-40A32  AMIT RRC-I/001      DI  18  xCB_400HVAC_FGR_A                   Circuit breaker 61F01              " Name="IO5_C2_27_IxCB_400HVAC_FGR_A" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="34" Titel="-40A32  AMIT RRC-I/001      DI  19  xCB_24HVAC_FGR_A                    Circuit breaker 61F02              " Name="IO5_C2_27_IxCB_24HVAC_FGR_A" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="35" Titel="-40A32  AMIT RRC-I/001      DI  20  xCB_400HVAC_FST                     Circuit breaker 62F01              " Name="IO5_C2_27_IxCB_400HVAC_FST" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="36" Titel="-40A32  AMIT RRC-I/001      DI  21  xCB_24HVAC_FST                      Circuit breaker 62F02              " Name="IO5_C2_27_IxCB_24HVAC_FST" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="37" Titel="-40A32  AMIT RRC-I/001      DI  22  xCB_400_HeatA                       Circuit breaker 63F01              " Name="IO5_C2_27_IxCB_400_HeatA" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="38" Titel="-40A32  AMIT RRC-I/001      DI  23  xCB_24_HeatA                        Circuit breaker 63F02              " Name="IO5_C2_27_IxCB_24_HeatA" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="39" Titel="-40A32  AMIT RRC-I/001      DI  24  xCB_Lub                             Circuit breaker 71F01              " Name="IO5_C2_27_IxCB_Lub" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="40" Titel="-40A32  AMIT RRC-I/001      DI  25  xCB_Sand1_A                         Circuit breaker 71F04              " Name="IO5_C2_27_IxCB_Sand1_A" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="41" Titel="-40A32  AMIT RRC-I/001      DI  26  xCB_Sand1Heat_A                     Circuit breaker 71F05              " Name="IO5_C2_27_IxCB_Sand1Heat_A" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="42" Titel="-40A32  AMIT RRC-I/001      DI  27  xCB_Sand2_A                         Circuit breaker 71F06              " Name="IO5_C2_27_IxCB_Sand2_A" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="43" Titel="-40A32  AMIT RRC-I/001      DI  28  xCB_Sand2Heat_A                     Circuit breaker 71F07              " Name="IO5_C2_27_IxCB_Sand2Heat_A" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="44" Titel="-40A32  AMIT RRC-I/001      DI  29  xCB_Cont_Pant                       Circuit breaker 21F03              " Name="IO5_C2_27_IxCB_Cont_Pant" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

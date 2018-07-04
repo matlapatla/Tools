@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="AL_F-ActivationLogic" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="AL_F.xStartSwitchOffVehicle             AL_F_T;" Name="AL_F.xStartSwitchOffVehicle" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="AL_F.xDriveInhibit                      AL_F_T;" Name="AL_F.xDriveInhibit" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="AL_F.xVehicleContrOff                   AL_F_T;" Name="AL_F.xVehicleContrOff" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="AL_F.xActivePM1                         AL_F_T;" Name="AL_F.xActivePM1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="AL_F.xActivePM1_DriveInhibit            AL_F_T;" Name="AL_F.xActivePM1_DriveInhibit" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="AL_F.xActivePM2                         AL_F_T;" Name="AL_F.xActivePM2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="AL_F.xActivePM3                         AL_F_T;" Name="AL_F.xActivePM3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="AL_F.xDrivInh_UnderVoltage              AL_F_T;" Name="AL_F.xDrivInh_UnderVoltage" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="AL_F.xSwitchOffVehicleRequest           AL_F_T;" Name="AL_F.xSwitchOffVehicleRequest" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="AL_F.xFastSwitchOffRequested            AL_F_T;" Name="AL_F.xFastSwitchOffRequested" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="AL_F.xActivePM2_Herman                  AL_F_T;" Name="AL_F.xActivePM2_Herman" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

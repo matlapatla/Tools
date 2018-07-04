@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="IO_F-OutputsCAN" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="IO_F.xREL_HeatOn_A1                     IO_F_T;" Name="IO_F.xREL_HeatOn_A1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="IO_F.xREL_HeatOn_A2                     IO_F_T;" Name="IO_F.xREL_HeatOn_A2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="IO_F.xREL_HeatOn_A3                     IO_F_T;" Name="IO_F.xREL_HeatOn_A3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="IO_F.xREL_HeatOn_A4                     IO_F_T;" Name="IO_F.xREL_HeatOn_A4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="IO_F.xREL_HeatOn_B1                     IO_F_T;" Name="IO_F.xREL_HeatOn_B1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IO_F.xREL_HeatOn_B2                     IO_F_T;" Name="IO_F.xREL_HeatOn_B2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="IO_F.xREL_HeatOn_B3                     IO_F_T;" Name="IO_F.xREL_HeatOn_B3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="IO_F.xREL_HeatOn_B4                     IO_F_T;" Name="IO_F.xREL_HeatOn_B4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="IO_F.xREL_HeatFan_A1                    IO_F_T;" Name="IO_F.xREL_HeatFan_A1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="IO_F.xREL_HeatFan_A2                    IO_F_T;" Name="IO_F.xREL_HeatFan_A2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="IO_F.xREL_HeatFan_A3                    IO_F_T;" Name="IO_F.xREL_HeatFan_A3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="IO_F.xREL_HeatFan_A4                    IO_F_T;" Name="IO_F.xREL_HeatFan_A4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="IO_F.xREL_HeatFan_B1                    IO_F_T;" Name="IO_F.xREL_HeatFan_B1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="IO_F.xREL_HeatFan_B2                    IO_F_T;" Name="IO_F.xREL_HeatFan_B2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="IO_F.xREL_HeatFan_B3                    IO_F_T;" Name="IO_F.xREL_HeatFan_B3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="IO_F.xREL_HeatFan_B4                    IO_F_T;" Name="IO_F.xREL_HeatFan_B4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

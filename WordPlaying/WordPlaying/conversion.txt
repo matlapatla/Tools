@@ -1,0 +1,67 @@
+
+RetainData_F=CountersOfUseFunctions
+
+GLOBAL_ERRORS_F=DdsErrorStates
+
+DDU_Outputs_F=DduOutputs
+
+DDU_MainInputs_F=DduInputs
+
+DDU_InputsFromHVAC_F=DduInputsFromHvacSystem
+
+IM_F=CanMaster
+
+IN_F=CanMonitoring
+
+IK_F=CanEmgcyMsg
+
+IICL_F=DoorsInputs
+			
+CL_F=DoorsLogic
+
+II_F=InputsCAN
+
+XA_F=AuxLogic
+
+DS_F=DDULogic
+
+DC_F=DiagnosticsLogic	
+	
+PAR_F=Parameters
+		
+IIAM_F=InvertersInputs				
+		
+		IIBU_F=BrakeInputs
+			
+		IIVM_F=RecorderInputs
+			
+		IIPC_F=PowerInputs
+			
+		IIKL_F=HvacInputsPassenger
+			
+		IIKLC_F=HvacInputsCab
+			
+		II_VCU_SW_F=VcuSwVersion
+			
+		KL_F=HvacLogicPassenger
+			
+		AM_F=InvertersLogic
+			
+		AL_F=ActivationLogic
+			
+		VM_F=RecorderLogic
+			
+		KLC_F=HvacLogicCab
+			
+		SL_F=OutsideLighting
+			
+		LO_F=InsideLighting
+			
+		IO_F=OutputsCAN
+			
+		PC_F=MainCircuitLogic
+			
+		BU_F=BrakeLogic
+			
+	
+

@@ -1,0 +1,167 @@
+﻿<LogResource Name="Tomik1 Monitor" Bild="pictures\QSK38_kl.png">
+
+
+
+A  Switching on and off, initial states	18
+--------------------------------------------
+xFB_VehicleContrOn - By switching 32S01 to “0” position signal xFB_VehicleContrOn goes low. It gives the request for deactivation of control system.
+
+xREL_VehicleContrOff - Deactivation of the control system is done by signal (xREL_VehicleContrOff) activation. 
+
+
+xREL_LightFGRStage1
+xRelHeatxxFan
+xREL_EnergyStage1
+xFB_VehicleContrStart
+xFB_24VNetNotOK 
+
+xCB_BattDistr - Monitoring of state of 24VDC battery net distribution circuit breaker 32F01 (xCB_BattDistr). CB tripped --> DDS 0606 ”32F01 – Jistič bateriové sítě – skříň 114”
+
+
+
+Z    Drive operation, braking operation, traction preparation	21
+--------------------------------------------------------------------
+xFB_DirectA - For the direction Forward we use relay -22K11 RIOMS signal (xFB_DirectA) 
+xFB_DirectB - For the direction Backward we use relay -22K12 RIOMS signal (xFB_DirectB)
+
+xFB_DirLeverA - We directly monitor also Direction lever signals xFB_DirLeverA (relay  -22K10)
+xFB_DirLeverB - We directly monitor also Direction lever signals xFB_DirLeverB (relay -22K20)
+
+xFB_Direct_Neutral - Neutral direction is derived from the relay -22K13 RIOM signal (xFB_Direct_Neutral)
+xFB_DriveMC -       
+xFB_FullDriveMC -     
+xFB_CoastingMC -   
+xFB_InvMSB_MC -    
+xFB_InvBrMC -     
+xFB_InvEmBrMC - Digital signal xFB_DriveMC, xFB_FullDriveMC, xFB_CoastingMC, xFB_InvMSB_MC, xFB_InvBrMC, xFB_InvEmBrMC signals are received over RIOMs and send via CAN. TCMS has to consider different timing of the digital feedback of master controller.
+
+<LogResource Name="Tomik2 Monitor" Bild="pictures\QSK38_kl.png">
+
+
+wVAL_MasterContrHd - Master Controller analogue value
+
+xFB_Hd_MC_DR2 - (default 80% of max effort),
+xFB_Hd_MC_DR1 - (default 40% of max effort),
+xFB_Hd_MC_BR0 - Coasting
+xFB_Hd_MC_BR1 - (default 50% of max braking effort)
+xFB_Hd_MC_BR2 - Inv (100% of max braking effort)  
+
+xPB_RearConReq - Activation Rear Console by the switch -22SZS +111A signal (xPB_RearConReq) 
+xREL_RearConIndi1 - Indication on correct activation of Rear Console is by LED inside  22SZS +111A controlled by relay -22KZS +183A and DO xREL_RearConIndi1  
+
+xPB_RearVigilance - At using any driving and braking command driver must press Vigilance Push Button signal (xPB_RearVigilance)
+xREL_DriveRC - For the driving and braking from Rear Console are implemented RIOM DO(xREL_DriveRC)(xREL_InvBrMC) enabling sending required information to converters (TCU) and brake control unit (BCU)
+xREL_InvBrMC - For the driving and braking from Rear Console are implemented RIOM DO(xREL_DriveRC)(xREL_InvBrMC) enabling sending required information to converters (TCU) and brake control unit (BCU)
+
+xPB_WashMachine - Washing mode is selected by -22SWM +111E generating signal (xPB_WashMachine) functionality is controlled by VCU
+xPB_EmDrive_NoBc - This mode is selected by -22SNJ +111A signal (xPB_EmDrive_NoBc)
+
+
+<LogResource Name="Tomik3 Monitor" Bild="pictures\coolengineHT.png">
+
+                usCounter_A_SetHwPortParFailed  -                PokusHokus
+
+DI_Emergency_Drive The BCU with wire signal DegradedMode
+DI_Drive (default 40% of max effort), 
+DI_FullDrive (default 80% of max effort), 
+DI_Brake_Inv (default 50% of max braking effort) and 
+DI_FullBrake_Inv (100% of max braking effort) control the applied effort while the braking inputs have priority. 
+
+         usTestVar1           -          Tomik Radio usTestVar1 novej pokus
+ 
+ usStep1CycleCounter -  Tomik Counter
+
+If a CANopen failure is detected, the effort reference will be set to zero for acceleration.
+If braking is selected - indicated by the digital inputs 
+DI_Brake_Inv, 
+DI_FullBrake_Inv or 
+DI_HazardBrake_Inv the behavior will be like in emergency mode
+
+TCU_bDC_Trip
+DO_EDBrakeOK 
+
+xREL_MSB_Act - TCMS has to apply MSB xREL_MSB_Act through -22K09 +183A
+VCU_bBrakeBlending When crossing the speed threshold (default 3km/h, final value will be established during commissioning) in braking mode the VCU sets the signal VCU_bBrakeBlending (in some other applications called also Stopping Brake signal)
+Two directions can be defined using bits DI_Forward and DI_Backward
+VCU can initiate the wheel calibration by setting “VCU_bEnaWheelCalib=1”
+If the motor temperature exceeds 140°C a Warning is set and above 145°C the TCU goes into trip status indicated by the signal TCU_bDC_Trip. 
+
+xREL_MSB_Act - TCMS has to apply MSB xREL_MSB_Act through -22K09 +183A
+VCU_bTripReset - VCU_bTripReset=1 (It is a global reset for all active faults.)
+
+
+xHwPortSetCfgNOK    -    ST_SethwPortPar failed 
+
+   xHwPortSetCfgNOK  - xxxxx
+
+The adhesion control also defines when the Slip/Slide bits will be set (TCU_bLowSlipSlide (default >5% reduction, >500ms) and TCU_bDeepSlide (default >20% reduction, >1,5s)). 
+
+
+B	Friction brake	43
+--------------------------
+
+usTestVar1 - Tomik Radio usTestVar1 novej pokus
+
+
+M	Main circuit and main control	51
+
+
+
+
+
+
+
+
+X	Auxiliaries and battery	64
+
+
+
+C	Doors	70
+
+
+
+
+
+K	Heating, ventilation & air conditioning	83
+
+
+
+
+
+
+S	Safety devices	98
+
+
+
+
+
+
+
+
+F	Additional functions	102
+
+
+
+
+
+L	Interior lighting	104
+
+
+
+O	Special operating modes	106
+
+
+
+T	Traction functions (multi-traction and coupling)	106
+
+
+
+
+
+
+I	Infrastructure	107
+
+
+
+
+List of DDS (Diagnostic Data Set)	118

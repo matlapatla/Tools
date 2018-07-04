@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="PC_F-MainCircuitLogic" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="IIPC_F.xBCCU_IsReady                    PC_F_T;" Name="IIPC_F.xBCCU_IsReady" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="IIPC_F.xBCCU_IsEnable                   PC_F_T;" Name="IIPC_F.xBCCU_IsEnable" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="IIPC_F.xBCCU_Trip                       PC_F_T;" Name="IIPC_F.xBCCU_Trip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="IIPC_F.xBCCU_RestartIsBlocked           PC_F_T;" Name="IIPC_F.xBCCU_RestartIsBlocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="IIPC_F.xBCCU_BatteryTempTooHi           PC_F_T;" Name="IIPC_F.xBCCU_BatteryTempTooHi" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IIPC_F.xBCCU_BatteVoltTooLow            PC_F_T;" Name="IIPC_F.xBCCU_BatteVoltTooLow" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="IIPC_F.xBCCU_HeartBitFault              PC_F_T;" Name="IIPC_F.xBCCU_HeartBitFault" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="IIPC_F.xBCCU_InternTempTooHig           PC_F_T;" Name="IIPC_F.xBCCU_InternTempTooHig" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="IIPC_F.xBCCU_BatteVoltTooHig            PC_F_T;" Name="IIPC_F.xBCCU_BatteVoltTooHig" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="IIPC_F.xBCCU_BatteTempSensFau           PC_F_T;" Name="IIPC_F.xBCCU_BatteTempSensFau" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="IIPC_F.xBCCU_InternCommuFault           PC_F_T;" Name="IIPC_F.xBCCU_InternCommuFault" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="IIPC_F.xBCCU_BatteCurrSensFau           PC_F_T;" Name="IIPC_F.xBCCU_BatteCurrSensFau" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="IIPC_F.wBCCU_U_Bat                      PC_F_T;" Name="IIPC_F.wBCCU_U_Bat" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="IIPC_F.iBCCU_I_Bat                      PC_F_T;" Name="IIPC_F.iBCCU_I_Bat" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="IIPC_F.iBCCU_I_Busbar                   PC_F_T;" Name="IIPC_F.iBCCU_I_Busbar" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="IIPC_F.iBCCU_I_TempBat                  PC_F_T;" Name="IIPC_F.iBCCU_I_TempBat" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="PC_F.xPantographDownTCMS                PC_F_T;" Name="PC_F.xPantographDownTCMS" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="PC_F.rCatenaryVoltage                   PC_F_T;" Name="PC_F.rCatenaryVoltage" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="PC_F.xHSCB_isClosed                     PC_F_T;" Name="PC_F.xHSCB_isClosed" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="PC_F.xCloseHSCB                         PC_F_T;" Name="PC_F.xCloseHSCB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="PC_F.xOCL_Ok                            PC_F_T;" Name="PC_F.xOCL_Ok" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="PC_F.xReadyToShutDown                   PC_F_T;" Name="PC_F.xReadyToShutDown" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="PC_F.xResetEnergy                       PC_F_T;" Name="PC_F.xResetEnergy" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="PC_F.TCU_A_t.xChargeDC                  PC_F_T;" Name="PC_F.TCU_A_t.xChargeDC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="PC_F.TCU_A_t.xEnaMC                     PC_F_T;" Name="PC_F.TCU_A_t.xEnaMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="PC_F.TCU_A_t.xTripReset                 PC_F_T;" Name="PC_F.TCU_A_t.xTripReset" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="PC_F.TCU_A_t.wLifeSignal                PC_F_T;" Name="PC_F.TCU_A_t.wLifeSignal" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="PC_F.TCU_A_t.xOK                        PC_F_T;" Name="PC_F.TCU_A_t.xOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="PC_F.TCU_A_t.xReady                     PC_F_T;" Name="PC_F.TCU_A_t.xReady" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="PC_F.TCU_A_t.xTimer                     PC_F_T;" Name="PC_F.TCU_A_t.xTimer" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="PC_F.TCU_A_t.xBlockDC3                  PC_F_T;" Name="PC_F.TCU_A_t.xBlockDC3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="PC_F.TCU_A_t.xCutOff                    PC_F_T;" Name="PC_F.TCU_A_t.xCutOff" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="PC_F.TCU_A_t.xReadyToDisable            PC_F_T;" Name="PC_F.TCU_A_t.xReadyToDisable" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="PC_F.TCU_A_t.xTCU_MotorActive           PC_F_T;" Name="PC_F.TCU_A_t.xTCU_MotorActive" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="34" Titel="PC_F.TCU_A_t.xED_Brake_Failure          PC_F_T;" Name="PC_F.TCU_A_t.xED_Brake_Failure" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="35" Titel="PC_F.TCU_A_t.xTCUisOK                   PC_F_T;" Name="PC_F.TCU_A_t.xTCUisOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="36" Titel="PC_F.TCU_B_t.xChargeDC                  PC_F_T;" Name="PC_F.TCU_B_t.xChargeDC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="37" Titel="PC_F.TCU_B_t.xEnaMC                     PC_F_T;" Name="PC_F.TCU_B_t.xEnaMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="38" Titel="PC_F.TCU_B_t.xTripReset                 PC_F_T;" Name="PC_F.TCU_B_t.xTripReset" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="39" Titel="PC_F.TCU_B_t.wLifeSignal                PC_F_T;" Name="PC_F.TCU_B_t.wLifeSignal" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="40" Titel="PC_F.TCU_B_t.xOK                        PC_F_T;" Name="PC_F.TCU_B_t.xOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="41" Titel="PC_F.TCU_B_t.xReady                     PC_F_T;" Name="PC_F.TCU_B_t.xReady" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="42" Titel="PC_F.TCU_B_t.xTimer                     PC_F_T;" Name="PC_F.TCU_B_t.xTimer" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="43" Titel="PC_F.TCU_B_t.xBlockDC3                  PC_F_T;" Name="PC_F.TCU_B_t.xBlockDC3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="44" Titel="PC_F.TCU_B_t.xCutOff                    PC_F_T;" Name="PC_F.TCU_B_t.xCutOff" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="45" Titel="PC_F.TCU_B_t.xReadyToDisable            PC_F_T;" Name="PC_F.TCU_B_t.xReadyToDisable" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="46" Titel="PC_F.TCU_B_t.xTCU_MotorActive           PC_F_T;" Name="PC_F.TCU_B_t.xTCU_MotorActive" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="47" Titel="PC_F.TCU_B_t.xED_Brake_Failure          PC_F_T;" Name="PC_F.TCU_B_t.xED_Brake_Failure" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="48" Titel="PC_F.TCU_B_t.xTCUisOK                   PC_F_T;" Name="PC_F.TCU_B_t.xTCUisOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="49" Titel="PC_F.DDU_Outputs.dwEnergyConsumed_Total PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumed_Total" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="50" Titel="PC_F.DDU_Outputs.dwEnergyRegenerated_TotalPC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyRegenerated_Total" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="51" Titel="PC_F.DDU_Outputs.dwEnergyDissipated_TotalPC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyDissipated_Total" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="52" Titel="PC_F.DDU_Outputs.dwEnergyConsumedMotors_TotalPC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumedMotors_Total" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="53" Titel="PC_F.DDU_Outputs.dwEnergyConsumedAUX_TotalPC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumedAUX_Total" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="54" Titel="PC_F.DDU_Outputs.dwEnergyConsumed_Count1PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumed_Count1" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="55" Titel="PC_F.DDU_Outputs.dwEnergyRegenerated_Count1PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyRegenerated_Count1" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="56" Titel="PC_F.DDU_Outputs.dwEnergyDissipated_Count1PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyDissipated_Count1" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="57" Titel="PC_F.DDU_Outputs.dwEnergyConsumedMotors_Count1PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumedMotors_Count1" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="58" Titel="PC_F.DDU_Outputs.dwEnergyConsumedAUX_Count1PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumedAUX_Count1" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="59" Titel="PC_F.DDU_Outputs.dwEnergyConsumed_Count2PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumed_Count2" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="60" Titel="PC_F.DDU_Outputs.dwEnergyRegenerated_Count2PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyRegenerated_Count2" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="61" Titel="PC_F.DDU_Outputs.dwEnergyDissipated_Count2PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyDissipated_Count2" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="62" Titel="PC_F.DDU_Outputs.dwEnergyConsumedMotors_Count2PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumedMotors_Count2" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="63" Titel="PC_F.DDU_Outputs.dwEnergyConsumedAUX_Count2PC_F_T;" Name="PC_F.DDU_Outputs.dwEnergyConsumedAUX_Count2" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

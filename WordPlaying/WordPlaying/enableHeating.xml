@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="enableHeating" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="KLA_C2_52_IxUmlHeizEin                  switch_All_Fans_A (0 = OFF, 1 = ON)" Name="KLA_C2_52_IxUmlHeizEin" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="KLB_C2_53_IxUmlHeizEin                  switch_All_Fans_B (0 = OFF, 1 = ON)" Name="KLB_C2_53_IxUmlHeizEin" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="IO8_C2_29_IxFB_REG_HeatA1               switch_Heating_A1 (0 = OFF, 1 = ON)" Name="IO8_C2_29_IxFB_REG_HeatA1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="IO8_C2_29_IxFB_REG_HeatA2               switch_Heating_A2 (0 = OFF, 1 = ON)" Name="IO8_C2_29_IxFB_REG_HeatA2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="IO8_C2_29_IxFB_REG_HeatA3               switch_Heating_A3 (0 = OFF, 1 = ON)" Name="IO8_C2_29_IxFB_REG_HeatA3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IO8_C2_29_IxFB_REG_HeatA4               switch_Heating_A4 (0 = OFF, 1 = ON)" Name="IO8_C2_29_IxFB_REG_HeatA4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="IO13_C2_32_IxFB_REG_HeatB1              switch_Heating_B1 (0 = OFF, 1 = ON)" Name="IO13_C2_32_IxFB_REG_HeatB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="IO13_C2_32_IxFB_REG_HeatB2              switch_Heating_B2 (0 = OFF, 1 = ON)" Name="IO13_C2_32_IxFB_REG_HeatB2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="IO13_C2_32_IxFB_REG_HeatB3              switch_Heating_B3 (0 = OFF, 1 = ON)" Name="IO13_C2_32_IxFB_REG_HeatB3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="IO13_C2_32_IxFB_REG_HeatB4              switch_Heating_B4 (0 = OFF, 1 = ON)" Name="IO13_C2_32_IxFB_REG_HeatB4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

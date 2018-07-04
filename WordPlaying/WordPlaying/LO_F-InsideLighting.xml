@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="LO_F-InsideLighting" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="LO_F.xLightFGRStage1                    LO_F_T;" Name="LO_F.xLightFGRStage1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

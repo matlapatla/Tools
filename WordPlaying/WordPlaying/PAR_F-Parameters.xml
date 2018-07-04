@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="PAR_F-Parameters" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="PAR_F.Par_xSimulationCAN_IO             PAR_F_T;" Name="PAR_F.Par_xSimulationCAN_IO" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="PAR_F.Par_xSimulationCL                 PAR_F_T;" Name="PAR_F.Par_xSimulationCL" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="PAR_F.Par_xSimulationAM                 PAR_F_T;" Name="PAR_F.Par_xSimulationAM" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="PAR_F.Par_xSimulationBU                 PAR_F_T;" Name="PAR_F.Par_xSimulationBU" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="PAR_F.Par_xSimulationVM                 PAR_F_T;" Name="PAR_F.Par_xSimulationVM" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="PAR_F.Par_xSimulationPC                 PAR_F_T;" Name="PAR_F.Par_xSimulationPC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="PAR_F.Par_xSimulationKL                 PAR_F_T;" Name="PAR_F.Par_xSimulationKL" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="PAR_F.Par_xSimulationKLC                PAR_F_T;" Name="PAR_F.Par_xSimulationKLC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="PAR_F.Par_xWriteSD_Card                 PAR_F_T;" Name="PAR_F.Par_xWriteSD_Card" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="PAR_F.Par_rCatenaryVoltageMin           PAR_F_T;" Name="PAR_F.Par_rCatenaryVoltageMin" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="PAR_F.Par_rCatenaryVoltageMax           PAR_F_T;" Name="PAR_F.Par_rCatenaryVoltageMax" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="PAR_F.Par_iTripResetCounts              PAR_F_T;" Name="PAR_F.Par_iTripResetCounts" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="PAR_F.Par_tTripResetTime                PAR_F_T;" Name="PAR_F.Par_tTripResetTime" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="PAR_F.Par_tDiagMissingTime              PAR_F_T;" Name="PAR_F.Par_tDiagMissingTime" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="PAR_F.Par_tDiagDisappearsTime           PAR_F_T;" Name="PAR_F.Par_tDiagDisappearsTime" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="PAR_F.Par_tLifeCounterTime              PAR_F_T;" Name="PAR_F.Par_tLifeCounterTime" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="PAR_F.Par_tCatenaryVoltageDropTime      PAR_F_T;" Name="PAR_F.Par_tCatenaryVoltageDropTime" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="PAR_F.Par_rVoltageSetpointValue         PAR_F_T;" Name="PAR_F.Par_rVoltageSetpointValue" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="PAR_F.Par_rMaxBatteryChargingCurrent    PAR_F_T;" Name="PAR_F.Par_rMaxBatteryChargingCurrent" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="PAR_F.Par_rMaxBusbarCurrent             PAR_F_T;" Name="PAR_F.Par_rMaxBusbarCurrent" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="PAR_F.Par_tAUX_TripStage1_Time          PAR_F_T;" Name="PAR_F.Par_tAUX_TripStage1_Time" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="PAR_F.Par_tAUX_TripStage2_Time          PAR_F_T;" Name="PAR_F.Par_tAUX_TripStage2_Time" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="PAR_F.Par_tLowIsolationDiagTime         PAR_F_T;" Name="PAR_F.Par_tLowIsolationDiagTime" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="PAR_F.Par_rGearboxRatio                 PAR_F_T;" Name="PAR_F.Par_rGearboxRatio" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="PAR_F.Par_iWheelDiameterDefaultValue    PAR_F_T;" Name="PAR_F.Par_iWheelDiameterDefaultValue" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="PAR_F.Par_rWheelDiamCalibrationSpeed    PAR_F_T;" Name="PAR_F.Par_rWheelDiamCalibrationSpeed" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="PAR_F.Par_rWFL_SpeedTreshold            PAR_F_T;" Name="PAR_F.Par_rWFL_SpeedTreshold" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="PAR_F.Par_tTCMS_BootUpTime              PAR_F_T;" Name="PAR_F.Par_tTCMS_BootUpTime" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="PAR_F.Par_tStandStill_Time              PAR_F_T;" Name="PAR_F.Par_tStandStill_Time" POU="" Einheit="TIME" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="PAR_F.Par_rLimitationDuringRelease      PAR_F_T;" Name="PAR_F.Par_rLimitationDuringRelease" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="PAR_F.Par_rHoldingBrakeRelaseEffort     PAR_F_T;" Name="PAR_F.Par_rHoldingBrakeRelaseEffort" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="PAR_F.Par_xEXHIBITION                   PAR_F_T;" Name="PAR_F.Par_xEXHIBITION" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="VrPAR_Factor_TCU_A                      PAR_F_T;" Name="VrPAR_Factor_TCU_A" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="VrPAR_Factor_TCU_B                      PAR_F_T;" Name="VrPAR_Factor_TCU_B" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

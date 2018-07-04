@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="165A" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="-40A16  AMIT RRC-IO/001     DI  01  xFB_Applied_TB                      Bogie stopped (brakes)             " Name="IO6_C2_30_IxFB_Applied_TB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="-40A16  AMIT RRC-IO/001     DI  02  xFB_AuxReleased_TB                  Em. brake release - TB - 23K81     " Name="IO6_C2_30_IxFB_AuxReleased_TB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="-40A16  AMIT RRC-IO/001     DI  03  xFB_AuxRelTimer_TB                  Relay auxiliary pump - TB - 23KAR1P" Name="IO6_C2_30_IxFB_AuxRelTimer_TB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="-40A16  AMIT RRC-IO/001     DI  04  xFB_BrReleased_MB1                  Relay 23K92                        " Name="IO6_C2_30_IxFB_BrReleased_MB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="-40A16  AMIT RRC-IO/001     DI  05  xFB_BrApplied_MB1                   Relay 23K93                        " Name="IO6_C2_30_IxFB_BrApplied_MB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="-40A16  AMIT RRC-IO/001     DI  06  xFB_HCM_NOK_MB1                     Braking unit NOK                   " Name="IO6_C2_30_IxFB_HCM_NOK_MB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="-40A16  AMIT RRC-IO/001     DI  07  xFB_AuxRelease_MB1                  Em. brake release - MB - 23K82     " Name="IO6_C2_30_IxFB_AuxRelease_MB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="-40A16  AMIT RRC-IO/001     DI  08  xFB_AuxRelTimer_MB1                 Relay auxiliary pump - MB - 23KAR2P" Name="IO6_C2_30_IxFB_AuxRelTimer_MB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="-40A16  AMIT RRC-IO/001     DI  09  xFB_BCU_NOK_TB                      BCU major failure                  " Name="IO6_C2_30_IxFB_BCU_NOK_TB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="-40A16  AMIT RRC-IO/001     DO  01  xREL_MB_BI1                         Signal Bit1                        " Name="IO6_C2_30_QxREL_MB_BI1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="-40A16  AMIT RRC-IO/001     DO  02  xREL_MB_BI2                         Signal Bit2                        " Name="IO6_C2_30_QxREL_MB_BI2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="-40A16  AMIT RRC-IO/001     DO  03  xREL_MB_BI3                         Signal Bit3                        " Name="IO6_C2_30_QxREL_MB_BI3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="-40A16  AMIT RRC-IO/001     DO  04  xREL_MB_BI4                         Signal Bit4                        " Name="IO6_C2_30_QxREL_MB_BI4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="-40A16  AMIT RRC-IO/001     DO  05  xREL_HeatA1Fan                      Heater 63A01 Fan - ON              " Name="IO6_C2_30_QxREL_HeatA1Fan" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="-40A16  AMIT RRC-IO/001     DO  06  xREL_HeatA2Fan                      Heater 63A02 Fan - ON              " Name="IO6_C2_30_QxREL_HeatA2Fan" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="-40A16  AMIT RRC-IO/001     DO  07  xREL_HeatA3Fan                      Heater 63A03 Fan - ON              " Name="IO6_C2_30_QxREL_HeatA3Fan" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="-40A16  AMIT RRC-IO/001     DO  08  xREL_HeatA4Fan                      Heater 63A04 Fan - ON              " Name="IO6_C2_30_QxREL_HeatA4Fan" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

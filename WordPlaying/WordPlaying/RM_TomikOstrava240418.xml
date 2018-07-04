@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="xxxxxxxx" Bild="pictures\trampng.png">
+  </LogResource>
+</RailMonitor>

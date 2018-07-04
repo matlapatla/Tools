@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="II_VCU_SW_F-VcuSwVersion" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="II_VCU_SW_F.bVCU_SW_Version_W           II_VCU_SW_F_T;" Name="II_VCU_SW_F.bVCU_SW_Version_W" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="II_VCU_SW_F.bVCU_SW_Version_X           II_VCU_SW_F_T;" Name="II_VCU_SW_F.bVCU_SW_Version_X" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="II_VCU_SW_F.bVCU_SW_Version_Y           II_VCU_SW_F_T;" Name="II_VCU_SW_F.bVCU_SW_Version_Y" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="II_VCU_SW_F.bVCU_SW_Version_Z           II_VCU_SW_F_T;" Name="II_VCU_SW_F.bVCU_SW_Version_Z" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

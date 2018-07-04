@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="disableEDB" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="AM_A_C1_14_QxDisableEDBrake             AM_A_C1_14_QxDisableEDBrake_TCU1" Name="AM_A_C1_14_QxDisableEDBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="AM_B_C1_15_QxDisableEDBrake             AM_B_C1_15_QxDisableEDBrake_TCU2" Name="AM_B_C1_15_QxDisableEDBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="II_F.wVAL_HV1                           wVAL_HV1" Name="II_F.wVAL_HV1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="VwVAL_HV1                               wVAL_HV1" Name="VwVAL_HV1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="IIAM_F.AM_A.iTCU_InputVoltage           IiLineVoltage_TCU" Name="IIAM_F.AM_A.iTCU_InputVoltage" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IIAM_F.AM_B.iTCU_InputVoltage           IiLineVoltage_TCU" Name="IIAM_F.AM_B.iTCU_InputVoltage" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="PAR_F.Par_xSimulationKLC                test setup" Name="PAR_F.Par_xSimulationKLC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

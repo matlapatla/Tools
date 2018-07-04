@@ -1,0 +1,15 @@
+<LogResource Name="disableEDB" Bild="pictures\trampng.png">
+
+AM_A_C1_14_QxDisableEDBrake:  AM_A_C1_14_QxDisableEDBrake_TCU1
+AM_B_C1_15_QxDisableEDBrake: AM_B_C1_15_QxDisableEDBrake_TCU2
+
+wVAL_HV1  :  wVAL_HV1  
+IwCatenaryVoltage : IwCatenaryVoltage
+iTCU_InputVoltage  : IiLineVoltage_TCU
+
+Par_xSimulationKLC : test setup
+
+
+
+
+

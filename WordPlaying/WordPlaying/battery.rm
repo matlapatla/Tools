@@ -1,0 +1,7 @@
+<LogResource Name="battery" Bild="pictures\trampng.png">
+
+wBCCU_U_Bat : napeti baterie V
+iBCCU_I_Bat: proud baterie A
+iBCCU_I_TempBat: teplota baterie st.C
+
+

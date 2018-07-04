@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="DDU_Outputs_F-DduOutputs" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="DDU_Outputs_F.xResetShortDist           DS_DDU_F_T;" Name="DDU_Outputs_F.xResetShortDist" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="DDU_Outputs_F.xDoorInterval             DS_DDU_F_T;" Name="DDU_Outputs_F.xDoorInterval" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="DDU_Outputs_F.xResetConsumptionCount1   DS_DDU_F_T;" Name="DDU_Outputs_F.xResetConsumptionCount1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="DDU_Outputs_F.xResetConsumptionCount2   DS_DDU_F_T;" Name="DDU_Outputs_F.xResetConsumptionCount2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="DDU_Outputs_F.xResetConsumptionTotal    DS_DDU_F_T;" Name="DDU_Outputs_F.xResetConsumptionTotal" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="DDU_Outputs_F.xDisableMTBs              DS_DDU_F_T;" Name="DDU_Outputs_F.xDisableMTBs" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="DDU_Outputs_F.xDriverPreheatHVAC        DS_DDU_F_T;" Name="DDU_Outputs_F.xDriverPreheatHVAC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="DDU_Outputs_F.xDehumidificationOn       DS_DDU_F_T;" Name="DDU_Outputs_F.xDehumidificationOn" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="DDU_Outputs_F.xResetHeater1             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="DDU_Outputs_F.xResetHeater2             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="DDU_Outputs_F.xResetHeater3             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="DDU_Outputs_F.xResetHeater4             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="DDU_Outputs_F.xResetHeater5             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater5" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="DDU_Outputs_F.xResetHeater6             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater6" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="DDU_Outputs_F.xResetHeater7             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater7" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="DDU_Outputs_F.xResetHeater8             DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeater8" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="DDU_Outputs_F.xDriverAutoHVAC           DS_DDU_F_T;" Name="DDU_Outputs_F.xDriverAutoHVAC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="DDU_Outputs_F.xDriverEcoHVAC            DS_DDU_F_T;" Name="DDU_Outputs_F.xDriverEcoHVAC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="DDU_Outputs_F.xDriverFanHVAC            DS_DDU_F_T;" Name="DDU_Outputs_F.xDriverFanHVAC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="DDU_Outputs_F.xPassAutoHVAC             DS_DDU_F_T;" Name="DDU_Outputs_F.xPassAutoHVAC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="DDU_Outputs_F.xPassModeWarmHVAC         DS_DDU_F_T;" Name="DDU_Outputs_F.xPassModeWarmHVAC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="DDU_Outputs_F.xPassFanHVAC              DS_DDU_F_T;" Name="DDU_Outputs_F.xPassFanHVAC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="DDU_Outputs_F.xResetHeatersServ         DS_DDU_F_T;" Name="DDU_Outputs_F.xResetHeatersServ" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="DDU_Outputs_F.xServiceMode              DS_DDU_F_T;" Name="DDU_Outputs_F.xServiceMode" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="DDU_Outputs_F.xNormalTurnOff            DS_DDU_F_T;" Name="DDU_Outputs_F.xNormalTurnOff" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="DDU_Outputs_F.xFastTurnOff              DS_DDU_F_T;" Name="DDU_Outputs_F.xFastTurnOff" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="DDU_Outputs_F.xContinueWorking          DS_DDU_F_T;" Name="DDU_Outputs_F.xContinueWorking" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="DDU_Outputs_F.xTCU_A_ResetTrip          DS_DDU_F_T;" Name="DDU_Outputs_F.xTCU_A_ResetTrip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="DDU_Outputs_F.xTCU_B_ResetTrip          DS_DDU_F_T;" Name="DDU_Outputs_F.xTCU_B_ResetTrip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="DDU_Outputs_F.xBCCU_ResetTrip           DS_DDU_F_T;" Name="DDU_Outputs_F.xBCCU_ResetTrip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="DDU_Outputs_F.bWipperInterval           DS_DDU_F_T;" Name="DDU_Outputs_F.bWipperInterval" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="DDU_Outputs_F.bPassTempHVAC             DS_DDU_F_T;" Name="DDU_Outputs_F.bPassTempHVAC" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="DDU_Outputs_F.bDriverTempHVAC           DS_DDU_F_T;" Name="DDU_Outputs_F.bDriverTempHVAC" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="DDU_Outputs_F.bDriverFanHVAC            DS_DDU_F_T;" Name="DDU_Outputs_F.bDriverFanHVAC" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="34" Titel="DDU_Outputs_F.bDoorInhibit              DS_DDU_F_T;" Name="DDU_Outputs_F.bDoorInhibit" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="35" Titel="DDU_Outputs_F.bPassFanHVAC              DS_DDU_F_T;" Name="DDU_Outputs_F.bPassFanHVAC" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="36" Titel="DDU_Outputs_F.xActiveHand               DS_DDU_F_T;" Name="DDU_Outputs_F.xActiveHand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="37" Titel="DDU_Outputs_F.xActiveErrA               DS_DDU_F_T;" Name="DDU_Outputs_F.xActiveErrA" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="38" Titel="DDU_Outputs_F.xActiveNotConfErrB        DS_DDU_F_T;" Name="DDU_Outputs_F.xActiveNotConfErrB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="39" Titel="DDU_Outputs_F.xConfirmErrB              DS_DDU_F_T;" Name="DDU_Outputs_F.xConfirmErrB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="40" Titel="DDU_Outputs_F.xActiveErrC               DS_DDU_F_T;" Name="DDU_Outputs_F.xActiveErrC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="41" Titel="DDU_Outputs_F.xActiveErrD               DS_DDU_F_T;" Name="DDU_Outputs_F.xActiveErrD" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="42" Titel="DDU_Outputs_F.xActiveErrE               DS_DDU_F_T;" Name="DDU_Outputs_F.xActiveErrE" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="43" Titel="DDU_Outputs_F.xActiveNewErr             DS_DDU_F_T;" Name="DDU_Outputs_F.xActiveNewErr" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="44" Titel="DDU_Outputs_F.xLanguage                 DS_DDU_F_T;" Name="DDU_Outputs_F.xLanguage" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="45" Titel="DDU_Outputs_F.xButtonOK                 DS_DDU_F_T;" Name="DDU_Outputs_F.xButtonOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="46" Titel="DDU_Outputs_F.bScreenNumber             DS_DDU_F_T;" Name="DDU_Outputs_F.bScreenNumber" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="47" Titel="DDU_Outputs_F.bSoftVer1                 DS_DDU_F_T;" Name="DDU_Outputs_F.bSoftVer1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="48" Titel="DDU_Outputs_F.bSoftVer2                 DS_DDU_F_T;" Name="DDU_Outputs_F.bSoftVer2" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="49" Titel="DDU_Outputs_F.bSoftVer3                 DS_DDU_F_T;" Name="DDU_Outputs_F.bSoftVer3" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="50" Titel="DDU_Outputs_F.bDateYear                 DS_DDU_F_T;" Name="DDU_Outputs_F.bDateYear" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="51" Titel="DDU_Outputs_F.bDateMonth                DS_DDU_F_T;" Name="DDU_Outputs_F.bDateMonth" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="52" Titel="DDU_Outputs_F.bDateDay                  DS_DDU_F_T;" Name="DDU_Outputs_F.bDateDay" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="53" Titel="DDU_Outputs_F.bDateHour                 DS_DDU_F_T;" Name="DDU_Outputs_F.bDateHour" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="54" Titel="DDU_Outputs_F.bDateMinutes              DS_DDU_F_T;" Name="DDU_Outputs_F.bDateMinutes" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="55" Titel="DDU_Outputs_F.bDataSec                  DS_DDU_F_T;" Name="DDU_Outputs_F.bDataSec" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="56" Titel="DDU_Outputs_F.bWheelDiameters           DS_DDU_F_T;" Name="DDU_Outputs_F.bWheelDiameters" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="57" Titel="DDU_Outputs_F.wActualSpeed              DS_DDU_F_T;" Name="DDU_Outputs_F.wActualSpeed" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="58" Titel="DDU_Outputs_F.wVehicleNo                DS_DDU_F_T;" Name="DDU_Outputs_F.wVehicleNo" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="59" Titel="DDU_Outputs_F.wVehicleNoRecorder        DS_DDU_F_T;" Name="DDU_Outputs_F.wVehicleNoRecorder" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

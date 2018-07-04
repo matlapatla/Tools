@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="DDU_MainInputs_F-DduInputs" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="DDU_MainInputs_F.Power_t.xTCU_A_ConverterIsolatedDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_A_ConverterIsolated" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="DDU_MainInputs_F.Power_t.xTCU_A_Trip    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_A_Trip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="DDU_MainInputs_F.Power_t.xTCU_A_RestartBlockedDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_A_RestartBlocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="DDU_MainInputs_F.Power_t.xTCU_A_Warning DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_A_Warning" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="DDU_MainInputs_F.Power_t.xTCU_A_AuxTrip DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_A_AuxTrip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="DDU_MainInputs_F.Power_t.xBCCU_Trip     DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xBCCU_Trip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="DDU_MainInputs_F.Power_t.xBCCU_Blocked  DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xBCCU_Blocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="DDU_MainInputs_F.Power_t.xTCU_B_ConverterIsolatedDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_B_ConverterIsolated" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="DDU_MainInputs_F.Power_t.xTCU_B_Trip    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_B_Trip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="DDU_MainInputs_F.Power_t.xTCU_B_RestartBlockedDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_B_RestartBlocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="DDU_MainInputs_F.Power_t.xTCU_B_Warning DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.xTCU_B_Warning" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="DDU_MainInputs_F.Power_t.wTCU_A_LifeSignalDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTCU_A_LifeSignal" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="DDU_MainInputs_F.Power_t.wTemp_BR1_TCU_ADS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_BR1_TCU_A" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="DDU_MainInputs_F.Power_t.wTemp_BR2_TCU_ADS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_BR2_TCU_A" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="DDU_MainInputs_F.Power_t.wTemp_M1_TCU_A DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_M1_TCU_A" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="DDU_MainInputs_F.Power_t.wTemp_M2_TCU_A DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_M2_TCU_A" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="DDU_MainInputs_F.Power_t.wActualEffort_TCU_ADS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wActualEffort_TCU_A" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="DDU_MainInputs_F.Power_t.wTCU_A_PowerAUXDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTCU_A_PowerAUX" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="DDU_MainInputs_F.Power_t.wBCCU_BatteryCurrentDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wBCCU_BatteryCurrent" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="DDU_MainInputs_F.Power_t.wBCCU_BusbarCurrentDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wBCCU_BusbarCurrent" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="DDU_MainInputs_F.Power_t.wBCCU_BatteryTemperatureDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wBCCU_BatteryTemperature" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="DDU_MainInputs_F.Power_t.wTCU_B_LifeSignalDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTCU_B_LifeSignal" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="DDU_MainInputs_F.Power_t.wTemp_BR1_TCU_BDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_BR1_TCU_B" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="DDU_MainInputs_F.Power_t.wTemp_BR2_TCU_BDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_BR2_TCU_B" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="DDU_MainInputs_F.Power_t.wTemp_M1_TCU_B DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_M1_TCU_B" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="DDU_MainInputs_F.Power_t.wTemp_M2_TCU_B DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wTemp_M2_TCU_B" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="DDU_MainInputs_F.Power_t.wActualEffort_TCU_BDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Power_t.wActualEffort_TCU_B" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="DDU_MainInputs_F.DrivInh.xErrorActive_Item1DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xErrorActive_Item1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="DDU_MainInputs_F.DrivInh.xDiagnostic_Item2DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xDiagnostic_Item2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="DDU_MainInputs_F.DrivInh.xBatteryCharging_Item3DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xBatteryCharging_Item3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="DDU_MainInputs_F.DrivInh.x600Vinput_Item4DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.x600Vinput_Item4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="DDU_MainInputs_F.DrivInh.x400Vnet_Item5 DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.x400Vnet_Item5" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="DDU_MainInputs_F.DrivInh.xGreenLine_Item6DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xGreenLine_Item6" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="DDU_MainInputs_F.DrivInh.xPower_Item7   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xPower_Item7" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="34" Titel="DDU_MainInputs_F.DrivInh.xDeadMan_Item11DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xDeadMan_Item11" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="35" Titel="DDU_MainInputs_F.DrivInh.xWrongManipulation_Item12DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xWrongManipulation_Item12" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="36" Titel="DDU_MainInputs_F.DrivInh.xNotValidDir_Item13DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xNotValidDir_Item13" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="37" Titel="DDU_MainInputs_F.DrivInh.xAutomaticBrake_Item14DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xAutomaticBrake_Item14" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="38" Titel="DDU_MainInputs_F.DrivInh.xBrakeError_Item15DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xBrakeError_Item15" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="39" Titel="DDU_MainInputs_F.DrivInh.xCoasting_Item16DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.DrivInh.xCoasting_Item16" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="40" Titel="DDU_MainInputs_F.Service.bWheelDiameters1DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bWheelDiameters1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="41" Titel="DDU_MainInputs_F.Service.bWheelDiameters2DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bWheelDiameters2" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="42" Titel="DDU_MainInputs_F.Service.bWheelDiameters3DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bWheelDiameters3" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="43" Titel="DDU_MainInputs_F.Service.bWheelDiameters4DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bWheelDiameters4" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="44" Titel="DDU_MainInputs_F.Service.bWheelDiameters5DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bWheelDiameters5" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="45" Titel="DDU_MainInputs_F.Service.bWheelDiameters6DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bWheelDiameters6" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="46" Titel="DDU_MainInputs_F.Service.wSWver_TCU_A   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_TCU_A" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="47" Titel="DDU_MainInputs_F.Service.wSWver_TCU_B   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_TCU_B" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="48" Titel="DDU_MainInputs_F.Service.wSWver_CL1     DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_CL1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="49" Titel="DDU_MainInputs_F.Service.wSWver_CL2     DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_CL2" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="50" Titel="DDU_MainInputs_F.Service.wSWver_CL3     DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_CL3" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="51" Titel="DDU_MainInputs_F.Service.wSWver_CL4     DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_CL4" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="52" Titel="DDU_MainInputs_F.Service.wSWver_KL_A    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_KL_A" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="53" Titel="DDU_MainInputs_F.Service.wSWver_KL_B    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_KL_B" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="54" Titel="DDU_MainInputs_F.Service.wSWver_KL_C    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.wSWver_KL_C" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="55" Titel="DDU_MainInputs_F.Service.bSWver_VCU_1   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_VCU_1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="56" Titel="DDU_MainInputs_F.Service.bSWver_VCU_2   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_VCU_2" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="57" Titel="DDU_MainInputs_F.Service.bSWver_VCU_3   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_VCU_3" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="58" Titel="DDU_MainInputs_F.Service.bSWver_VCU_4   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_VCU_4" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="59" Titel="DDU_MainInputs_F.Service.bSWver_BU_LSB  DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_BU_LSB" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="60" Titel="DDU_MainInputs_F.Service.bSWver_BU_MSB  DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_BU_MSB" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="61" Titel="DDU_MainInputs_F.Service.bSWver_EVR_1   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_EVR_1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="62" Titel="DDU_MainInputs_F.Service.bSWver_EVR_2   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_EVR_2" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="63" Titel="DDU_MainInputs_F.Service.bSWver_EVR_3   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_EVR_3" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="64" Titel="DDU_MainInputs_F.Service.bSWver_EVR_4   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_EVR_4" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="65" Titel="DDU_MainInputs_F.Service.bSWver_EVR_5   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_EVR_5" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="66" Titel="DDU_MainInputs_F.Service.bSWver_EVR_6   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.Service.bSWver_EVR_6" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="67" Titel="DDU_MainInputs_F.xGreenLine             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xGreenLine" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="68" Titel="DDU_MainInputs_F.xDoorsReqPass          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoorsReqPass" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="69" Titel="DDU_MainInputs_F.xDoorsReqHC            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoorsReqHC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="70" Titel="DDU_MainInputs_F.xDoorsAlarm            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoorsAlarm" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="71" Titel="DDU_MainInputs_F.xHeatDepot             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xHeatDepot" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="72" Titel="DDU_MainInputs_F.xSlide                 DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xSlide" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="73" Titel="DDU_MainInputs_F.xPassBrake             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="74" Titel="DDU_MainInputs_F.xBlockingRun           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xBlockingRun" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="75" Titel="DDU_MainInputs_F.xFogLightFront         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xFogLightFront" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="76" Titel="DDU_MainInputs_F.xFogLightRear          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xFogLightRear" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="77" Titel="DDU_MainInputs_F.xMTB                   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xMTB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="78" Titel="DDU_MainInputs_F.xPantoUpOk             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPantoUpOk" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="79" Titel="DDU_MainInputs_F.xPantoUpFail           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPantoUpFail" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="80" Titel="DDU_MainInputs_F.xPantoDown             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPantoDown" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="81" Titel="DDU_MainInputs_F.xBatteryCharging       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xBatteryCharging" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="82" Titel="DDU_MainInputs_F.xBatteryOk             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xBatteryOk" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="83" Titel="DDU_MainInputs_F.xBatterySaveMode       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xBatterySaveMode" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="84" Titel="DDU_MainInputs_F.xOverheating           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xOverheating" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="85" Titel="DDU_MainInputs_F.xHbuError              DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xHbuError" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="86" Titel="DDU_MainInputs_F.xHbuNotReady           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xHbuNotReady" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="87" Titel="DDU_MainInputs_F.xWashingMode           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xWashingMode" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="88" Titel="DDU_MainInputs_F.xSwitchOffScreen       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xSwitchOffScreen" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="89" Titel="DDU_MainInputs_F.xDirForward            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDirForward" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="90" Titel="DDU_MainInputs_F.xDirBackward           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDirBackward" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="91" Titel="DDU_MainInputs_F.xStateOpenDoor1        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xStateOpenDoor1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="92" Titel="DDU_MainInputs_F.xStateOpenDoor2        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xStateOpenDoor2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="93" Titel="DDU_MainInputs_F.xStateOpenDoor3        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xStateOpenDoor3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="94" Titel="DDU_MainInputs_F.xStateOpenDoor4        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xStateOpenDoor4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="95" Titel="DDU_MainInputs_F.xDoor1OutOfServ        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1OutOfServ" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="96" Titel="DDU_MainInputs_F.xDoor2OutOfServ        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2OutOfServ" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="97" Titel="DDU_MainInputs_F.xDoor3OutOfServ        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3OutOfServ" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="98" Titel="DDU_MainInputs_F.xDoor4OutOfServ        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4OutOfServ" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="99" Titel="DDU_MainInputs_F.xDoor1Err              DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Err" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="100" Titel="DDU_MainInputs_F.xDoor2Err              DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Err" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="101" Titel="DDU_MainInputs_F.xDoor3Err              DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3Err" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="102" Titel="DDU_MainInputs_F.xDoor4Err              DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4Err" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="103" Titel="DDU_MainInputs_F.xDoor1OpenHandle       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1OpenHandle" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="104" Titel="DDU_MainInputs_F.xDoor1Brake            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Brake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="105" Titel="DDU_MainInputs_F.xDoor1Blocked          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Blocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="106" Titel="DDU_MainInputs_F.xDoor1Blocked3         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Blocked3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="107" Titel="DDU_MainInputs_F.xDoor1Alarm            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Alarm" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="108" Titel="DDU_MainInputs_F.xDoor2Brake            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Brake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="109" Titel="DDU_MainInputs_F.xDoor2Blocked          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Blocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="110" Titel="DDU_MainInputs_F.xDoor2Blocked3         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Blocked3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="111" Titel="DDU_MainInputs_F.xDoor2Alarm            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Alarm" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="112" Titel="DDU_MainInputs_F.xDoor3Brake            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3Brake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="113" Titel="DDU_MainInputs_F.xDoor3Blocked          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3Blocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="114" Titel="DDU_MainInputs_F.xDoor3Blocked3         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3Blocked3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="115" Titel="DDU_MainInputs_F.xDoor3Alarm            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3Alarm" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="116" Titel="DDU_MainInputs_F.xDoor4Brake            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4Brake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="117" Titel="DDU_MainInputs_F.xDoor4Blocked          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4Blocked" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="118" Titel="DDU_MainInputs_F.xDoor4Blocked3         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4Blocked3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="119" Titel="DDU_MainInputs_F.xDoor4Alarm            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4Alarm" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="120" Titel="DDU_MainInputs_F.xDoor2Pram             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Pram" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="121" Titel="DDU_MainInputs_F.xDoor2HC               DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2HC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="122" Titel="DDU_MainInputs_F.xDoor1Blind            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Blind" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="123" Titel="DDU_MainInputs_F.xDoor2Ramp             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Ramp" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="124" Titel="DDU_MainInputs_F.xInhibitIntervalActive DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xInhibitIntervalActive" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="125" Titel="DDU_MainInputs_F.xDoor1Warning          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Warning" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="126" Titel="DDU_MainInputs_F.xDoor2Warning          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Warning" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="127" Titel="DDU_MainInputs_F.xDoor3Warning          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3Warning" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="128" Titel="DDU_MainInputs_F.xDoor4Warning          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4Warning" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="129" Titel="DDU_MainInputs_F.xDoor2OpenHandle       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2OpenHandle" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="130" Titel="DDU_MainInputs_F.xDoor3OpenHandle       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3OpenHandle" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="131" Titel="DDU_MainInputs_F.xDoor4OpenHandle       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4OpenHandle" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="132" Titel="DDU_MainInputs_F.xDoor1Request          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor1Request" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="133" Titel="DDU_MainInputs_F.xDoor2Request          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor2Request" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="134" Titel="DDU_MainInputs_F.xDoor3Request          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor3Request" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="135" Titel="DDU_MainInputs_F.xDoor4Request          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDoor4Request" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="136" Titel="DDU_MainInputs_F.xDriverHVAC_On         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDriverHVAC_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="137" Titel="DDU_MainInputs_F.xPassHVAC_On           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassHVAC_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="138" Titel="DDU_MainInputs_F.xDehumOn               DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDehumOn" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="139" Titel="DDU_MainInputs_F.xDriverHeatersOn       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDriverHeatersOn" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="140" Titel="DDU_MainInputs_F.xDehumAvail            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDehumAvail" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="141" Titel="DDU_MainInputs_F.xDriverFanMode         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDriverFanMode" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="142" Titel="DDU_MainInputs_F.xDriverModeAuto        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDriverModeAuto" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="143" Titel="DDU_MainInputs_F.xWiperIntervalActive   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xWiperIntervalActive" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="144" Titel="DDU_MainInputs_F.xDriverCoolHeat_On     DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDriverCoolHeat_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="145" Titel="DDU_MainInputs_F.xPassCoolHeat_On       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassCoolHeat_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="146" Titel="DDU_MainInputs_F.xPassCoolHeat_RemoteOFFDS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassCoolHeat_RemoteOFF" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="147" Titel="DDU_MainInputs_F.xPassModeWarm_On       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassModeWarm_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="148" Titel="DDU_MainInputs_F.xPassModeWarm_Avaible  DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassModeWarm_Avaible" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="149" Titel="DDU_MainInputs_F.xPassFanAuto           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassFanAuto" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="150" Titel="DDU_MainInputs_F.xPassFanAuto_Available DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassFanAuto_Available" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="151" Titel="DDU_MainInputs_F.wOutsideTemp           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wOutsideTemp" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="152" Titel="DDU_MainInputs_F.wShortDist             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wShortDist" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="153" Titel="DDU_MainInputs_F.wCatenaryVoltage       DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wCatenaryVoltage" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="154" Titel="DDU_MainInputs_F.wBatteryVoltage        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wBatteryVoltage" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="155" Titel="DDU_MainInputs_F.wTorqueMB1             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wTorqueMB1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="156" Titel="DDU_MainInputs_F.wTorqueMB2             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wTorqueMB2" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="157" Titel="DDU_MainInputs_F.wTorque_Percent        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wTorque_Percent" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="158" Titel="DDU_MainInputs_F.dwLongDist             DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.dwLongDist" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="159" Titel="DDU_MainInputs_F.bSpeedLimit            DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.bSpeedLimit" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="160" Titel="DDU_MainInputs_F.wDriverReqTemp         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wDriverReqTemp" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="161" Titel="DDU_MainInputs_F.wPassReqTemp           DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.wPassReqTemp" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="162" Titel="DDU_MainInputs_F.bDriverFanSpeed        DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.bDriverFanSpeed" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="163" Titel="DDU_MainInputs_F.bPassFanSpeed          DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.bPassFanSpeed" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="164" Titel="DDU_MainInputs_F.xPassProgBarTemp_Ava   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassProgBarTemp_Ava" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="165" Titel="DDU_MainInputs_F.xPassProgBarFan_Ava    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xPassProgBarFan_Ava" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="166" Titel="DDU_MainInputs_F.xDrivProgBarTemp_Ava   DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDrivProgBarTemp_Ava" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="167" Titel="DDU_MainInputs_F.xDrivProgBarFan_Ava    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDrivProgBarFan_Ava" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="168" Titel="DDU_MainInputs_F.xDriverModeAuto_Ava    DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDriverModeAuto_Ava" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="169" Titel="DDU_MainInputs_F.xDriverModeEco_Ava     DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xDriverModeEco_Ava" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="170" Titel="DDU_MainInputs_F.xActiveModePM2         DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xActiveModePM2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="171" Titel="DDU_MainInputs_F.xActiveModeLowBattery  DS_TCP_BUTTONS_F_T;" Name="DDU_MainInputs_F.xActiveModeLowBattery" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

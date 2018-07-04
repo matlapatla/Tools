@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="SL_F-OutsideLighting" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="SL_F.xSwitchOnBlinker_L                 SL_F_T;" Name="SL_F.xSwitchOnBlinker_L" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="SL_F.xSwitchOnBlinker_R                 SL_F_T;" Name="SL_F.xSwitchOnBlinker_R" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

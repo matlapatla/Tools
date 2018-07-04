@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="battery" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="IIPC_F.wBCCU_U_Bat                      napeti baterie V" Name="IIPC_F.wBCCU_U_Bat" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="VwBCCU_U_Bat                            napeti baterie V" Name="VwBCCU_U_Bat" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="PC_C1_81_IwBCCU_U_Bat                   napeti baterie V" Name="PC_C1_81_IwBCCU_U_Bat" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="IIPC_F.iBCCU_I_Bat                      proud baterie A" Name="IIPC_F.iBCCU_I_Bat" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="ViBCCU_I_Bat                            proud baterie A" Name="ViBCCU_I_Bat" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IIPC_F.iBCCU_I_TempBat                  teplota baterie st.C" Name="IIPC_F.iBCCU_I_TempBat" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="ViBCCU_I_TempBat                        teplota baterie st.C" Name="ViBCCU_I_TempBat" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

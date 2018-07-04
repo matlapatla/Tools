@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="IIBU_F-BrakeInputs" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="IIBU_F.wAI_TB_RS                        IIBU_F_T;" Name="IIBU_F.wAI_TB_RS" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="IIBU_F.wAII_TB_RS                       IIBU_F_T;" Name="IIBU_F.wAII_TB_RS" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="IIBU_F.bSW_ver_LSB                      IIBU_F_T;" Name="IIBU_F.bSW_ver_LSB" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="IIBU_F.bSW_ver_MSB                      IIBU_F_T;" Name="IIBU_F.bSW_ver_MSB" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="IIBU_F.xRollback_Applied                IIBU_F_T;" Name="IIBU_F.xRollback_Applied" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IIBU_F.xMinor_Flt                       IIBU_F_T;" Name="IIBU_F.xMinor_Flt" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="IIBU_F.xMajor_Flt                       IIBU_F_T;" Name="IIBU_F.xMajor_Flt" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="IIBU_F.xBrake_released                  IIBU_F_T;" Name="IIBU_F.xBrake_released" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="IIBU_F.xHolding_Brake                   IIBU_F_T;" Name="IIBU_F.xHolding_Brake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="IIBU_F.xRun                             IIBU_F_T;" Name="IIBU_F.xRun" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="IIBU_F.xBrake                           IIBU_F_T;" Name="IIBU_F.xBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="IIBU_F.xWSP_TB_Active                   IIBU_F_T;" Name="IIBU_F.xWSP_TB_Active" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="IIBU_F.xSanding_REQTB                   IIBU_F_T;" Name="IIBU_F.xSanding_REQTB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="IIBU_F.xTB_NoMotion                     IIBU_F_T;" Name="IIBU_F.xTB_NoMotion" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="IIBU_F.xDriving_Mir                     IIBU_F_T;" Name="IIBU_F.xDriving_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="IIBU_F.xBraking_L_Mir                   IIBU_F_T;" Name="IIBU_F.xBraking_L_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="IIBU_F.xHazardBrake_L_Mir               IIBU_F_T;" Name="IIBU_F.xHazardBrake_L_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="IIBU_F.xEmergencyBrake_L_Mir            IIBU_F_T;" Name="IIBU_F.xEmergencyBrake_L_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="IIBU_F.xRollback_Mir                    IIBU_F_T;" Name="IIBU_F.xRollback_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="IIBU_F.xDegradedMode_Mir                IIBU_F_T;" Name="IIBU_F.xDegradedMode_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="IIBU_F.xED_1_OK_Mir                     IIBU_F_T;" Name="IIBU_F.xED_1_OK_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="IIBU_F.xED_2_OK_Mir                     IIBU_F_T;" Name="IIBU_F.xED_2_OK_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="IIBU_F.xMajor_Event_L_Mir               IIBU_F_T;" Name="IIBU_F.xMajor_Event_L_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="IIBU_F.xBrakesReleased_Mir              IIBU_F_T;" Name="IIBU_F.xBrakesReleased_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="IIBU_F.xHoldingApplied_Mir              IIBU_F_T;" Name="IIBU_F.xHoldingApplied_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="IIBU_F.xBrakeDemand_Bit1_Mir            IIBU_F_T;" Name="IIBU_F.xBrakeDemand_Bit1_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="IIBU_F.xBrakeDemand_Bit2_Mir            IIBU_F_T;" Name="IIBU_F.xBrakeDemand_Bit2_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="IIBU_F.xBrakeDemand_Bit3_Mir            IIBU_F_T;" Name="IIBU_F.xBrakeDemand_Bit3_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="IIBU_F.xBrakeDemand_Bit4_Mir            IIBU_F_T;" Name="IIBU_F.xBrakeDemand_Bit4_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="IIBU_F.bDIA_TPOD3_Byte_0                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_0" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="IIBU_F.bDIA_TPOD3_Byte_1                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="IIBU_F.bDIA_TPOD3_Byte_2                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_2" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="IIBU_F.bDIA_TPOD3_Byte_3                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_3" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="IIBU_F.bDIA_TPOD3_Byte_4                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_4" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="34" Titel="IIBU_F.bDIA_TPOD3_Byte_5                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_5" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="35" Titel="IIBU_F.bDIA_TPOD3_Byte_6                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_6" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="36" Titel="IIBU_F.bDIA_TPOD3_Byte_7                IIBU_F_T;" Name="IIBU_F.bDIA_TPOD3_Byte_7" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="37" Titel="IIBU_F.xStandstill_Mir                  IIBU_F_T;" Name="IIBU_F.xStandstill_Mir" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

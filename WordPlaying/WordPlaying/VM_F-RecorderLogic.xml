@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="VM_F-RecorderLogic" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="IIVM_F.bHeartbeat                       VM_F_T;" Name="IIVM_F.bHeartbeat" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="IIVM_F.dwTotalDistanceMoved             VM_F_T;" Name="IIVM_F.dwTotalDistanceMoved" POU="" Einheit="DWORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="IIVM_F.wParticalDistanceMoved           VM_F_T;" Name="IIVM_F.wParticalDistanceMoved" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="IIVM_F.bVehicleSpeed                    VM_F_T;" Name="IIVM_F.bVehicleSpeed" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="IIVM_F.bCyclicCounterTPDO1              VM_F_T;" Name="IIVM_F.bCyclicCounterTPDO1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IIVM_F.xHWCoastingController            VM_F_T;" Name="IIVM_F.xHWCoastingController" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="IIVM_F.xHWFullDriveController           VM_F_T;" Name="IIVM_F.xHWFullDriveController" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="IIVM_F.xHWDriveController               VM_F_T;" Name="IIVM_F.xHWDriveController" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="IIVM_F.xHWMaxServiceBrakeLoop           VM_F_T;" Name="IIVM_F.xHWMaxServiceBrakeLoop" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="IIVM_F.xHWBrakeController               VM_F_T;" Name="IIVM_F.xHWBrakeController" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="IIVM_F.xHWMaxServiceBrakeCont           VM_F_T;" Name="IIVM_F.xHWMaxServiceBrakeCont" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="IIVM_F.xHWForward                       VM_F_T;" Name="IIVM_F.xHWForward" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="IIVM_F.xHWBackward                      VM_F_T;" Name="IIVM_F.xHWBackward" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="IIVM_F.xHWDeadman                       VM_F_T;" Name="IIVM_F.xHWDeadman" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="IIVM_F.xHWTrackBrakes                   VM_F_T;" Name="IIVM_F.xHWTrackBrakes" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="IIVM_F.xHWBell                          VM_F_T;" Name="IIVM_F.xHWBell" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="IIVM_F.xHWHeadlightFlasher              VM_F_T;" Name="IIVM_F.xHWHeadlightFlasher" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="IIVM_F.xHWDimmLights                    VM_F_T;" Name="IIVM_F.xHWDimmLights" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="IIVM_F.xHWEmergencyBrake                VM_F_T;" Name="IIVM_F.xHWEmergencyBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="IIVM_F.xHWTurnToRight                   VM_F_T;" Name="IIVM_F.xHWTurnToRight" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="IIVM_F.xHWTurnToLeft                    VM_F_T;" Name="IIVM_F.xHWTurnToLeft" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="IIVM_F.xHWRearConsoleActivati           VM_F_T;" Name="IIVM_F.xHWRearConsoleActivati" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="IIVM_F.xHWFrictionBrake                 VM_F_T;" Name="IIVM_F.xHWFrictionBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="IIVM_F.xHWInverseSecuritBrake           VM_F_T;" Name="IIVM_F.xHWInverseSecuritBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="IIVM_F.xHWSandingPedal                  VM_F_T;" Name="IIVM_F.xHWSandingPedal" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="IIVM_F.xHW_EDB2ok                       VM_F_T;" Name="IIVM_F.xHW_EDB2ok" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="IIVM_F.xHW_EDB1ok                       VM_F_T;" Name="IIVM_F.xHW_EDB1ok" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="IIVM_F.xHWSwitch                        VM_F_T;" Name="IIVM_F.xHWSwitch" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="IIVM_F.xHWGreenLine                     VM_F_T;" Name="IIVM_F.xHWGreenLine" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="IIVM_F.xCANDoorOperCommand              VM_F_T;" Name="IIVM_F.xCANDoorOperCommand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="IIVM_F.xCANSandingCommand               VM_F_T;" Name="IIVM_F.xCANSandingCommand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="IIVM_F.xCANHeatingCentCommOFF           VM_F_T;" Name="IIVM_F.xCANHeatingCentCommOFF" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="IIVM_F.xCardMissing                     VM_F_T;" Name="IIVM_F.xCardMissing" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="IIVM_F.xBlockedRecord                   VM_F_T;" Name="IIVM_F.xBlockedRecord" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="34" Titel="IIVM_F.wWheelDiameter                   VM_F_T;" Name="IIVM_F.wWheelDiameter" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="35" Titel="IIVM_F.wSpeedRatio                      VM_F_T;" Name="IIVM_F.wSpeedRatio" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="36" Titel="IIVM_F.bTachographSerie                 VM_F_T;" Name="IIVM_F.bTachographSerie" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="37" Titel="IIVM_F.bVersionSerialNumber             VM_F_T;" Name="IIVM_F.bVersionSerialNumber" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="38" Titel="IIVM_F.wTachographNumber                VM_F_T;" Name="IIVM_F.wTachographNumber" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="39" Titel="VM_F.xResetShortDist                    VM_F_T;" Name="VM_F.xResetShortDist" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="40" Titel="VM_F.wCatenaryCurrent                   VM_F_T;" Name="VM_F.wCatenaryCurrent" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="41" Titel="VM_F.wWheelDiameter                     VM_F_T;" Name="VM_F.wWheelDiameter" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

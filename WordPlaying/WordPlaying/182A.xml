@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="182A" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="-40A13  AMIT RRC-IO/001     DI  07  xFB_StartUpDelay                    Relay 22K17                        " Name="IO9_C2_23_IxFB_StartUpDelay" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="-40A13  AMIT RRC-IO/001     DI  08  xFB_VehicleCtrlOn                   Relay 32K01                        " Name="IO9_C2_23_IxFB_VehicleCtrlOn" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="-40A13  AMIT RRC-IO/001     DI  09  xFB_24VNetNotOK                     Relay 32K12                        " Name="IO9_C2_23_IxFB_24VNetNotOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="-40A13  AMIT RRC-IO/001     DI  10  xFB_VehicleCtrlStart                Relay 32K22                        " Name="IO9_C2_23_IxFB_VehicleCtrlStart" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="-40A13  AMIT RRC-IO/001     DI  11  xFB_RelEmButt                       Relay 43K01                        " Name="IO9_C2_23_IxFB_RelEmButt" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="-40A13  AMIT RRC-IO/001     DI  12  xFB_InvSecurBrake                   Relay 43K02                        " Name="IO9_C2_23_IxFB_InvSecurBrake" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="-40A13  AMIT RRC-IO/001     DI  13  xFB_RemHeatCutout                   Relay 45K12                        " Name="IO9_C2_23_IxFB_RemHeatCutout" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="-40A13  AMIT RRC-IO/001     DI  14  xFB_LightFGRStage2                  Relay 52K02                        " Name="IO9_C2_23_IxFB_LightFGRStage2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="-40A13  AMIT RRC-IO/001     DI  15  xFB_GreenLine                       Contact 80K12                      " Name="IO9_C2_23_IxFB_GreenLine" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="-40A13  AMIT RRC-IO/001     DI  16  xPB_DoorReqRad                      Contact 45K13                      " Name="IO9_C2_23_IxPB_DoorReqRad" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="-40A13  AMIT RRC-IO/001     DO  01  xREL_VehicleCtrlOff                 Relay 32K04                        " Name="IO9_C2_23_QxREL_VehicleCtrlOff" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="-40A13  AMIT RRC-IO/001     DO  02  xREL_EnergyStage1_2                 Relay 32K07                        " Name="IO9_C2_23_QxREL_EnergyStage1_2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="-40A13  AMIT RRC-IO/001     DO  03  xREL_LightFGRStage1                 Relay 52K01                        " Name="IO9_C2_23_QxREL_LightFGRStage1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="-40A13  AMIT RRC-IO/001     DO  04  xREL_DoorRelease                    Pilot light 80S34 via 80K07        " Name="IO9_C2_23_QxREL_DoorRelease" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="-40A13  AMIT RRC-IO/001     DO  05  xREL_Door1Open                      State of 1st door via 80K06        " Name="IO9_C2_23_QxREL_Door1Open" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="-40A13  AMIT RRC-IO/001     DO  06  xREL_SignalToDriver                 Signal to Driver via 80K10         " Name="IO9_C2_23_QxREL_SignalToDriver" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

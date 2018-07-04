@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="IIKLC_F-HvacInputsCab" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="IIKLC_F.bLzZ                            IIKLC_F_T;" Name="IIKLC_F.bLzZ" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="IIKLC_F.xAus                            IIKLC_F_T;" Name="IIKLC_F.xAus" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="IIKLC_F.xModeWarm                       IIKLC_F_T;" Name="IIKLC_F.xModeWarm" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="IIKLC_F.xZulueft_Autom                  IIKLC_F_T;" Name="IIKLC_F.xZulueft_Autom" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="IIKLC_F.xZulueft_1                      IIKLC_F_T;" Name="IIKLC_F.xZulueft_1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="IIKLC_F.xZulueft_2                      IIKLC_F_T;" Name="IIKLC_F.xZulueft_2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="IIKLC_F.xHeiz_IstEin                    IIKLC_F_T;" Name="IIKLC_F.xHeiz_IstEin" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="IIKLC_F.xFusspEin                       IIKLC_F_T;" Name="IIKLC_F.xFusspEin" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="IIKLC_F.xKuehl1_IstEin                  IIKLC_F_T;" Name="IIKLC_F.xKuehl1_IstEin" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="IIKLC_F.xPreHeat_IstEin                 IIKLC_F_T;" Name="IIKLC_F.xPreHeat_IstEin" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="IIKLC_F.xPreCool_IstEin                 IIKLC_F_T;" Name="IIKLC_F.xPreCool_IstEin" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="IIKLC_F.xModus_Direkt                   IIKLC_F_T;" Name="IIKLC_F.xModus_Direkt" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="IIKLC_F.xDN_DrSensor1                   IIKLC_F_T;" Name="IIKLC_F.xDN_DrSensor1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="IIKLC_F.xDN_Clixon80                    IIKLC_F_T;" Name="IIKLC_F.xDN_Clixon80" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="IIKLC_F.xDN_Clixon190                   IIKLC_F_T;" Name="IIKLC_F.xDN_Clixon190" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="IIKLC_F.xDN_H_Schuetz1                  IIKLC_F_T;" Name="IIKLC_F.xDN_H_Schuetz1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="IIKLC_F.xDN_H_Schuetz2                  IIKLC_F_T;" Name="IIKLC_F.xDN_H_Schuetz2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="IIKLC_F.xDN_TempAussen                  IIKLC_F_T;" Name="IIKLC_F.xDN_TempAussen" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="IIKLC_F.xDN_Zuluefter                   IIKLC_F_T;" Name="IIKLC_F.xDN_Zuluefter" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="IIKLC_F.xDN_TempZuluft                  IIKLC_F_T;" Name="IIKLC_F.xDN_TempZuluft" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="IIKLC_F.xDN_Kl1_HochDr                  IIKLC_F_T;" Name="IIKLC_F.xDN_Kl1_HochDr" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="IIKLC_F.xDN_Kl1_NiederDr                IIKLC_F_T;" Name="IIKLC_F.xDN_Kl1_NiederDr" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="IIKLC_F.xDN_Kl1_Komp                    IIKLC_F_T;" Name="IIKLC_F.xDN_Kl1_Komp" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="IIKLC_F.xDN_Kl1_Lueft                   IIKLC_F_T;" Name="IIKLC_F.xDN_Kl1_Lueft" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="IIKLC_F.xDN_TempRaum1                   IIKLC_F_T;" Name="IIKLC_F.xDN_TempRaum1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="IIKLC_F.xEntfeu_aktiv                   IIKLC_F_T;" Name="IIKLC_F.xEntfeu_aktiv" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="IIKLC_F.siTemp_Soll                     IIKLC_F_T;" Name="IIKLC_F.siTemp_Soll" POU="" Einheit="SINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="IIKLC_F.siTemp_Raum1                    IIKLC_F_T;" Name="IIKLC_F.siTemp_Raum1" POU="" Einheit="SINT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="IIKLC_F.iSW_Version                     IIKLC_F_T;" Name="IIKLC_F.iSW_Version" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="IIKLC_F.iAussenTemp                     IIKLC_F_T;" Name="IIKLC_F.iAussenTemp" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="IIKLC_F.iRaumTemp                       IIKLC_F_T;" Name="IIKLC_F.iRaumTemp" POU="" Einheit="INT" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="IIKLC_F.wHoursComp1                     IIKLC_F_T;" Name="IIKLC_F.wHoursComp1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

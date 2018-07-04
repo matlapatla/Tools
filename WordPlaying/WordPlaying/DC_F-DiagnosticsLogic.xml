@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="DC_F-DiagnosticsLogic" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="DC_F.xDiagON                            DC_F_T;" Name="DC_F.xDiagON" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="DC_F.xBootUpState                       DC_F_T;" Name="DC_F.xBootUpState" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="DC_F.xAUX_OnlyState                     DC_F_T;" Name="DC_F.xAUX_OnlyState" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="DC_F.xPreShutDown                       DC_F_T;" Name="DC_F.xPreShutDown" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="DC_F.xOperationalState                  DC_F_T;" Name="DC_F.xOperationalState" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="DC_F.xShutDownRequest                   DC_F_T;" Name="DC_F.xShutDownRequest" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="DC_F.xActiveErrSound                    DC_F_T;" Name="DC_F.xActiveErrSound" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="DC_F.xActiveErrLamp                     DC_F_T;" Name="DC_F.xActiveErrLamp" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="DC_F.xOperationalStateWODirection       DC_F_T;" Name="DC_F.xOperationalStateWODirection" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

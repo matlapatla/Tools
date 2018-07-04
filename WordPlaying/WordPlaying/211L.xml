@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="211L" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="-40A21  AMIT RRC-IO/001     DI  01  xPB_RearConCover                    Cover ZST                          " Name="IO11_C2_36_IxPB_RearConCover" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="-40A21  AMIT RRC-IO/001     DI  03  xPB_RearVigilance                   Rear Vigilance                     " Name="IO11_C2_36_IxPB_RearVigilance" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="-40A21  AMIT RRC-IO/001     DI  04  xFB_Hd_MC_BR2                       Master controller - ZST            " Name="IO11_C2_36_IxFB_Hd_MC_BR2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="-40A21  AMIT RRC-IO/001     DI  05  xFB_Hd_MC_BR1                       Master controller - ZST            " Name="IO11_C2_36_IxFB_Hd_MC_BR1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="-40A21  AMIT RRC-IO/001     DI  06  xFB_Hd_MC_BR0                       Master controller - ZST            " Name="IO11_C2_36_IxFB_Hd_MC_BR0" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="-40A21  AMIT RRC-IO/001     DI  07  xFB_Hd_MC_DR1                       Master controller - ZST            " Name="IO11_C2_36_IxFB_Hd_MC_DR1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="-40A21  AMIT RRC-IO/001     DI  08  xFB_Hd_MC_DR2                       Master controller - ZST            " Name="IO11_C2_36_IxFB_Hd_MC_DR2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="-40A21  AMIT RRC-IO/001     DI  09  xPB_DirIndicL_Rear                  Direction indicators - ZST         " Name="IO11_C2_36_IxPB_DirIndicL_Rear" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="-40A21  AMIT RRC-IO/001     DI  10  xPB_DirIndicR_Rear                  Direction indicators - ZST         " Name="IO11_C2_36_IxPB_DirIndicR_Rear" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="-40A21  AMIT RRC-IO/001     DI  11  xFB_RearFogLight                    Relay 51K11                        " Name="IO11_C2_36_IxFB_RearFogLight" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="-40A21  AMIT RRC-IO/001     DI  12  xPB_Bell_B                          Push-button 71S07                  " Name="IO11_C2_36_IxPB_Bell_B" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="-40A21  AMIT RRC-IO/001     DI  13  xPB_DoorCloseRear                   Contact 80S29                      " Name="IO11_C2_36_IxPB_DoorCloseRear" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="-40A21  AMIT RRC-IO/001     DI  14  xPA_PassEmButt_5                    Emergency button 5                 " Name="IO11_C2_36_IxPA_PassEmButt_5" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="-40A21  AMIT RRC-IO/001     DO  01  xREL_RearConAct                     Relay 22KZSA                       " Name="IO11_C2_36_QxREL_RearConAct" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="-40A21  AMIT RRC-IO/001     DO  03  xREL_BellGo_B                       Relay 71K22                        " Name="IO11_C2_36_QxREL_BellGo_B" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

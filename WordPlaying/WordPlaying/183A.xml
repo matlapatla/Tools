@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="183A" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="-40A14  AMIT RRC-IO/001     DI  01  xFB_DriveMC                         Relay 22K01                        " Name="IO10_C2_24_IxFB_DriveMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="-40A14  AMIT RRC-IO/001     DI  02  xFB_FullDriveMC                     Relay 22K02                        " Name="IO10_C2_24_IxFB_FullDriveMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="-40A14  AMIT RRC-IO/001     DI  03  xFB_CoastingMC                      Relay 22K03                        " Name="IO10_C2_24_IxFB_CoastingMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="-40A14  AMIT RRC-IO/001     DI  04  xFB_InvMSB_MC                       Relay 22K04                        " Name="IO10_C2_24_IxFB_InvMSB_MC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="-40A14  AMIT RRC-IO/001     DI  05  xFB_InvBrMC                         Relay 22K05                        " Name="IO10_C2_24_IxFB_InvBrMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="-40A14  AMIT RRC-IO/001     DI  06  xFB_InvEmBrMC                       Relay 22K06                        " Name="IO10_C2_24_IxFB_InvEmBrMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="-40A14  AMIT RRC-IO/001     DI  07  xFB_DirectA                         Relay 22K11                        " Name="IO10_C2_24_IxFB_DirectA" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="-40A14  AMIT RRC-IO/001     DI  08  xFB_DirectB                         Relay 22K12                        " Name="IO10_C2_24_IxFB_DirectB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="-40A14  AMIT RRC-IO/001     DI  09  xFB_DirectNeutral                   Relay 22K13                        " Name="IO10_C2_24_IxFB_DirectNeutral" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="-40A14  AMIT RRC-IO/001     DI  10  xFB_NoMotion                        Relay 22K03A                       " Name="IO10_C2_24_IxFB_NoMotion" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="-40A14  AMIT RRC-IO/001     DI  11  xFB_LineEmBr                        Relay 22K022                       " Name="IO10_C2_24_IxFB_LineEmBr" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="-40A14  AMIT RRC-IO/001     DI  12  xFB_Deadman                         Relay 22K14                        " Name="IO10_C2_24_IxFB_Deadman" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="-40A14  AMIT RRC-IO/001     DI  13  xFB_InvMSB_Deadman                  Relay 22K15                        " Name="IO10_C2_24_IxFB_InvMSB_Deadman" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="-40A14  AMIT RRC-IO/001     DI  14  xFB_InvMSB                          Relay 22K16                        " Name="IO10_C2_24_IxFB_InvMSB_MC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="-40A14  AMIT RRC-IO/001     DI  14  xFB_InvMSB                          Relay 22K16                        " Name="IO10_C2_24_IxFB_InvMSB_Deadman" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="-40A14  AMIT RRC-IO/001     DI  14  xFB_InvMSB                          Relay 22K16                        " Name="IO10_C2_24_IxFB_InvMSB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="-40A14  AMIT RRC-IO/001     DI  15  xFB_DirLeverA                       Relay 22K10                        " Name="IO10_C2_24_IxFB_DirLeverA" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="-40A14  AMIT RRC-IO/001     DI  16  xFB_DirLeverB                       Relay 22K20                        " Name="IO10_C2_24_IxFB_DirLeverB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="-40A14  AMIT RRC-IO/001     DO  01  xREL_RearConIndi1                   Relay ZST - 22KZS                  " Name="IO10_C2_24_QxREL_RearConIndi1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="-40A14  AMIT RRC-IO/001     DO  02  xREL_DriveBlock                     TCMS Drive blocking - 22K08        " Name="IO10_C2_24_QxREL_DriveBlock" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="-40A14  AMIT RRC-IO/001     DO  03  xREL_ErrLamp                        Error indication - 22K07           " Name="IO10_C2_24_QxREL_ErrLamp" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="-40A14  AMIT RRC-IO/001     DO  04  xREL_ErrSound                       Error acoustic indication          " Name="IO10_C2_24_QxREL_ErrSound" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="-40A14  AMIT RRC-IO/001     DO  05  xREL_MC_Sound                       Dead man acoustic indication       " Name="IO10_C2_24_QxREL_MC_Sound" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="-40A14  AMIT RRC-IO/001     DO  06  xREL_MSB_Act                        MSB Activation - 22K09             " Name="IO10_C2_24_QxREL_MSB_Act" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="-40A14  AMIT RRC-IO/001     DO  08  xREL_InvBrMC                        Inverse brake signal from Rear console. Relay 22K19 " Name="IO10_C2_24_QxREL_InvBrMC" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

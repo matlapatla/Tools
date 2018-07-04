@@ -1,0 +1,69 @@
+	VAR_GLOBAL RETAIN 
+		RetainData_F: RETAIN_DATA_F_T;
+			(*Counters of use functions*)
+	END_VAR
+	VAR_GLOBAL
+		GLOBAL_ERRORS_F: GLOBAL_ERRORS_F_T;
+			(*DDS error states*)
+		DDU_Outputs_F: DS_DDU_F_T;
+			(*DDU outputs*)
+		DDU_MainInputs_F: DS_TCP_BUTTONS_F_T;
+			(*DDU inputs*)
+		DDU_InputsFromHVAC_F: DS_TCP_HVAC_STATE_F_T;
+			(*DDU inputs from HVAC system*)
+		IM_F: IM_F_T;
+			(*CAN master*)
+		IN_F: IN_F_T;
+			(*CAN monitoring*)
+		IK_F: IK_F_T;
+			(*CAN emgcy msg*)
+		IICL_F: IICL_F_T;
+			(*Doors inputs*)
+		CL_F: CL_F_T;
+			(*Doors logic*)
+		II_F: II_F_T;
+			(*Inputs CAN*)
+		XA_F: XA_F_T;
+			(*Aux logic*)
+		DS_F: DS_F_T;
+			(*DDU logic*)
+		DC_F: DC_F_T;
+			(*Diagnostics logic*)
+		PAR_F: PAR_F_T;
+			(*Parameters*)
+		IIAM_F: IIAM_F_T;
+			(*Inverters inputs*)
+		IIBU_F: IIBU_F_T;
+			(*Brake inputs*)
+		IIVM_F: IIVM_F_T;
+			(*Recorder inputs*)
+		IIPC_F: IIPC_F_T;
+			(*Power inputs*)
+		IIKL_F: IIKL_F_T;
+			(*HVAC inputs - Passenger*)
+		IIKLC_F: IIKLC_F_T;
+			(*HVAC inputs - Cab*)
+		II_VCU_SW_F: II_VCU_SW_F_T;
+			(*VCU SW Version*)
+		KL_F: KL_F_T;
+			(*HVAC logic - Passenger*)
+		AM_F: AM_F_T;
+			(*Inverters logic*)
+		AL_F: AL_F_T;
+			(*Activation logic*)
+		VM_F: VM_F_T;
+			(*Recorder logic*)
+		KLC_F: KL_F_T;
+			(*HVAC logic - Cab*)
+		SL_F: SL_F_T;
+			(*Outside Lighting*)
+		LO_F: LO_F_T;
+			(*Inside Lighting*)
+		IO_F: IO_F_T;
+			(*Outputs CAN*)
+		PC_F: PC_F_T;
+			(*Main circuit logic*)
+		BU_F: BU_F_T;
+			(*Brake Logic*)
+	END_VAR
+

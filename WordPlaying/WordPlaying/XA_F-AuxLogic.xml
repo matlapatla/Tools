@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="XA_F-AuxLogic" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="XA_F.xWiperSwitchOn                     XA_F_T;" Name="XA_F.xWiperSwitchOn" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="XA_F.xBellGo_B                          XA_F_T;" Name="XA_F.xBellGo_B" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="XA_F.xIntervalActive                    XA_F_T;" Name="XA_F.xIntervalActive" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="XA_F.xWFL_DriveStop                     XA_F_T;" Name="XA_F.xWFL_DriveStop" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="XA_F.xWFL_Slide                         XA_F_T;" Name="XA_F.xWFL_Slide" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="XA_F.x1stBogieSand                      XA_F_T;" Name="XA_F.x1stBogieSand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="XA_F.x2stBogieSand                      XA_F_T;" Name="XA_F.x2stBogieSand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="XA_F.x3stBogieSand                      XA_F_T;" Name="XA_F.x3stBogieSand" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="XA_F.xSandingActive                     XA_F_T;" Name="XA_F.xSandingActive" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="XA_F.xSandHeat                          XA_F_T;" Name="XA_F.xSandHeat" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="XA_F.xBatteryCharging                   XA_F_T;" Name="XA_F.xBatteryCharging" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="XA_F.xBatteryChargingFailure            XA_F_T;" Name="XA_F.xBatteryChargingFailure" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="XA_F.xEnable                            XA_F_T;" Name="XA_F.xEnable" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="XA_F.xBlock                             XA_F_T;" Name="XA_F.xBlock" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="XA_F.xResetTrip                         XA_F_T;" Name="XA_F.xResetTrip" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="XA_F.xMTB_On                            XA_F_T;" Name="XA_F.xMTB_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="XA_F.TCU_A_t.xTCU_FanNotOK              XA_F_T;" Name="XA_F.TCU_A_t.xTCU_FanNotOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="XA_F.TCU_B_t.xTCU_FanNotOK              XA_F_T;" Name="XA_F.TCU_B_t.xTCU_FanNotOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="XA_F.xBCCU_AC_Input_Nok                 XA_F_T;" Name="XA_F.xBCCU_AC_Input_Nok" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="XA_F.wVoltageSetpointValue              XA_F_T;" Name="XA_F.wVoltageSetpointValue" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="XA_F.wMaxBatteryChargingCurrent         XA_F_T;" Name="XA_F.wMaxBatteryChargingCurrent" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="XA_F.wMaxBusbarCurrent                  XA_F_T;" Name="XA_F.wMaxBusbarCurrent" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="XA_F.xREL_400V_Supply                   XA_F_T;" Name="XA_F.xREL_400V_Supply" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="XA_F.xREL_BackUp                        XA_F_T;" Name="XA_F.xREL_BackUp" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="XA_F.xREL_BackUp24                      XA_F_T;" Name="XA_F.xREL_BackUp24" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="XA_F.xPowerReductionDriveInhibit        XA_F_T;" Name="XA_F.xPowerReductionDriveInhibit" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="XA_F.xReducedTraction                   XA_F_T;" Name="XA_F.xReducedTraction" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="XA_F.xReservePowerSupply                XA_F_T;" Name="XA_F.xReservePowerSupply" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="XA_F.rBatteryVoltage                    XA_F_T;" Name="XA_F.rBatteryVoltage" POU="" Einheit="REAL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

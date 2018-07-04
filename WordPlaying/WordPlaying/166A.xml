@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="166A" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="-40A33  AMIT RRC-AIO/201    DI  01  xFB_StandStill_MB1                  Relay 22K51                        " Name="IO7_C2_28_IxFB_StandStill_MB1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="-40A33  AMIT RRC-AIO/201    DI  02  xFB_StandStill_MB2                  Relay 22K52                        " Name="IO7_C2_28_IxFB_StandStill_MB2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="-40A33  AMIT RRC-AIO/201    DI  03  xFB_StandStill_TB                   Relay 22K53                        " Name="IO7_C2_28_IxFB_StandStill_TB" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="-40A33  AMIT RRC-AIO/201    DI  04  xFB_CC400_A_Cutout                  Relay 24K03                        " Name="IO7_C2_28_IxFB_CC400_A_Cutout" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="-40A33  AMIT RRC-AIO/201    DI  05  xFB_CC400_B_Cutout                  Relay 24K04                        " Name="IO7_C2_28_IxFB_CC400_B_Cutout" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="-40A33  AMIT RRC-AIO/201    DI  06  xPA_PassEmButt_1                    Emergency button 1                 " Name="IO7_C2_28_IxPA_PassEmButt_1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="-40A33  AMIT RRC-AIO/201    DI  07  xPA_PassEmButt_2                    Emergency button 2                 " Name="IO7_C2_28_IxPA_PassEmButt_2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="-40A33  AMIT RRC-AIO/201    AI  01  wVAL_HV                             APSS100                            " Name="IO7_C2_28_IwVAL_HV" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="-40A33  AMIT RRC-AIO/201    DO  01  xREL_CC400A_Timer                   Relay 24K12                        " Name="IO7_C2_28_QxREL_CC400A_Timer" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="-40A33  AMIT RRC-AIO/201    DO  02  xREL_EnergyStage1_1                 Relay 32K10                        " Name="IO7_C2_28_QxREL_EnergyStage1_1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="-40A33  AMIT RRC-AIO/201    DO  04  xREL_Slide                          Relay 71K14                        " Name="IO7_C2_28_QxREL_Slide" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="-40A33  AMIT RRC-AIO/201    DO  05  xREL_DriveStop                      Relay 71K15                        " Name="IO7_C2_28_QxREL_DriveStop" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="-40A34  AMIT RRC-IO/001     DI  01  xFB_HeatA1On                        Heater 63A01 - contactor feedback  " Name="IO8_C2_29_IxFB_HeatA1On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="-40A34  AMIT RRC-IO/001     DI  02  xFB_REG_HeatA1                      Heater 63A01 - regulation          " Name="IO8_C2_29_IxFB_REG_HeatA1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="-40A34  AMIT RRC-IO/001     DI  03  xFB_HeatA2On                        Heater 63A02 - contactor feedback  " Name="IO8_C2_29_IxFB_HeatA2On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="-40A34  AMIT RRC-IO/001     DI  04  xFB_REG_HeatA2                      Heater 63A02 - regulation          " Name="IO8_C2_29_IxFB_REG_HeatA2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="-40A34  AMIT RRC-IO/001     DI  05  xFB_HeatA3On                        Heater 63A03 - contactor feedback  " Name="IO8_C2_29_IxFB_HeatA3On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="-40A34  AMIT RRC-IO/001     DI  06  xFB_REG_HeatA3                      Heater 63A03 - regulation          " Name="IO8_C2_29_IxFB_REG_HeatA3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="-40A34  AMIT RRC-IO/001     DI  07  xFB_HeatA4On                        Heater 63A04 - contactor feedback  " Name="IO8_C2_29_IxFB_HeatA4On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="-40A34  AMIT RRC-IO/001     DI  08  xFB_REG_HeatA4                      Heater 63A04 - regulation          " Name="IO8_C2_29_IxFB_REG_HeatA4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="-40A34  AMIT RRC-IO/001     DI  09  xFB_LubOK                           Contact 71K12                      " Name="IO8_C2_29_IxFB_LubOK" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="-40A34  AMIT RRC-IO/001     DI  10  xFB_LubLow                          Contact 71K13                      " Name="IO8_C2_29_IxFB_LubLow" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="-40A34  AMIT RRC-IO/001     DO  01  xREL_HeatA1On                       Heater 63A01 - contactor           " Name="IO8_C2_29_QxREL_HeatA1On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="-40A34  AMIT RRC-IO/001     DO  02  xREL_HeatA2On                       Heater 63A02 - contactor           " Name="IO8_C2_29_QxREL_HeatA2On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="-40A34  AMIT RRC-IO/001     DO  03  xREL_HeatA3On                       Heater 63A03 - contactor           " Name="IO8_C2_29_QxREL_HeatA3On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="-40A34  AMIT RRC-IO/001     DO  04  xREL_HeatA4On                       Heater 63A04 - contactor           " Name="IO8_C2_29_QxREL_HeatA4On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

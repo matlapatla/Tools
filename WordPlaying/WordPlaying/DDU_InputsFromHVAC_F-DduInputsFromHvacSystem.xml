@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RailMonitor>
+  <Settings IP="192.168.0.243" Varlist="..\..\ATLG\VARLIST.csv" Task="500" Timeout="1000"></Settings>
+<LogResource Name="DDU_InputsFromHVAC_F-DduInputsFromHvacSystem" Bild="pictures\trampng.png">
+    <LogItem ID="0" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_A1  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_A1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="1" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_A1  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_A1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="2" Titel="DDU_InputsFromHVAC_F.xHU_Safety_A1      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_A1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="3" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_A1    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_A1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="4" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_A2  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_A2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="5" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_A2  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_A2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="6" Titel="DDU_InputsFromHVAC_F.xHU_Safety_A2      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_A2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="7" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_A2    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_A2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="8" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_A3  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_A3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="9" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_A3  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_A3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="10" Titel="DDU_InputsFromHVAC_F.xHU_Safety_A3      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_A3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="11" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_A3    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_A3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="12" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_A4  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_A4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="13" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_A4  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_A4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="14" Titel="DDU_InputsFromHVAC_F.xHU_Safety_A4      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_A4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="15" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_A4    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_A4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="16" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_B1  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_B1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="17" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_B1  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_B1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="18" Titel="DDU_InputsFromHVAC_F.xHU_Safety_B1      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_B1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="19" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_B1    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_B1" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="20" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_B2  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_B2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="21" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_B2  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_B2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="22" Titel="DDU_InputsFromHVAC_F.xHU_Safety_B2      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_B2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="23" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_B2    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_B2" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="24" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_B3  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_B3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="25" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_B3  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_B3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="26" Titel="DDU_InputsFromHVAC_F.xHU_Safety_B3      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_B3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="27" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_B3    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_B3" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="28" Titel="DDU_InputsFromHVAC_F.xHU_Ventilator_B4  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Ventilator_B4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="29" Titel="DDU_InputsFromHVAC_F.xHU_Regulation_B4  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Regulation_B4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="30" Titel="DDU_InputsFromHVAC_F.xHU_Safety_B4      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_Safety_B4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="31" Titel="DDU_InputsFromHVAC_F.xHU_ResBlock_B4    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xHU_ResBlock_B4" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="32" Titel="DDU_InputsFromHVAC_F.xDriverHVAC_On     DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriverHVAC_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="33" Titel="DDU_InputsFromHVAC_F.xDriver_Dehumidi_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriver_Dehumidi_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="34" Titel="DDU_InputsFromHVAC_F.xDriver_Defrosting_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriver_Defrosting_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="35" Titel="DDU_InputsFromHVAC_F.xDriverHeat6kW_On  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriverHeat6kW_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="36" Titel="DDU_InputsFromHVAC_F.xDriverCompressor_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriverCompressor_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="37" Titel="DDU_InputsFromHVAC_F.xDriverDehum_On    DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriverDehum_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="38" Titel="DDU_InputsFromHVAC_F.xDriverPreheat_On  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriverPreheat_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="39" Titel="DDU_InputsFromHVAC_F.xDriver_Precool_On DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriver_Precool_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="40" Titel="DDU_InputsFromHVAC_F.xDriver_Preheat_On DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriver_Preheat_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="41" Titel="DDU_InputsFromHVAC_F.xDriver_HeatCool_ReleaseDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriver_HeatCool_Release" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="42" Titel="DDU_InputsFromHVAC_F.xCarA_HVAC_On      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_HVAC_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="43" Titel="DDU_InputsFromHVAC_F.xDriver_ActiveErrorDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xDriver_ActiveError" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="44" Titel="DDU_InputsFromHVAC_F.xCarA_Precool_On   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_Precool_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="45" Titel="DDU_InputsFromHVAC_F.xCarA_Heat6kW_On   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_Heat6kW_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="46" Titel="DDU_InputsFromHVAC_F.xCarA_HeatConvention_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_HeatConvention_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="47" Titel="DDU_InputsFromHVAC_F.xCarA_Compressor1_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_Compressor1_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="48" Titel="DDU_InputsFromHVAC_F.xCarA_Compressor2_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_Compressor2_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="49" Titel="DDU_InputsFromHVAC_F.xCarA_Preheat_On   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_Preheat_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="50" Titel="DDU_InputsFromHVAC_F.xCarA_HeatCool_ReleaseDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_HeatCool_Release" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="51" Titel="DDU_InputsFromHVAC_F.xCarA_ActiveError  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarA_ActiveError" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="52" Titel="DDU_InputsFromHVAC_F.xCarB_Precool_On   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_Precool_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="53" Titel="DDU_InputsFromHVAC_F.xCarB_HVAC_On      DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_HVAC_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="54" Titel="DDU_InputsFromHVAC_F.xCarB_HeatCool_ReleaseDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_HeatCool_Release" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="55" Titel="DDU_InputsFromHVAC_F.xCarB_ActiveError  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_ActiveError" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="56" Titel="DDU_InputsFromHVAC_F.xCarB_Heat6kW_On   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_Heat6kW_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="57" Titel="DDU_InputsFromHVAC_F.xCarB_HeatConvention_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_HeatConvention_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="58" Titel="DDU_InputsFromHVAC_F.xCarB_Compressor1_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_Compressor1_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="59" Titel="DDU_InputsFromHVAC_F.xCarB_Compressor2_OnDS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_Compressor2_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="60" Titel="DDU_InputsFromHVAC_F.xCarB_Preheat_On   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.xCarB_Preheat_On" POU="" Einheit="BOOL" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="61" Titel="DDU_InputsFromHVAC_F.wDriverOutsideTemp DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wDriverOutsideTemp" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="62" Titel="DDU_InputsFromHVAC_F.bDriverInsideTemp  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.bDriverInsideTemp" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="63" Titel="DDU_InputsFromHVAC_F.wDriverSWver       DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wDriverSWver" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="64" Titel="DDU_InputsFromHVAC_F.wCarA_OutsideTemp  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarA_OutsideTemp" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="65" Titel="DDU_InputsFromHVAC_F.bCarA_InsideTemp1  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.bCarA_InsideTemp1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="66" Titel="DDU_InputsFromHVAC_F.bCarA_InsideTemp2  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.bCarA_InsideTemp2" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="67" Titel="DDU_InputsFromHVAC_F.wCarA_SWver        DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarA_SWver" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="68" Titel="DDU_InputsFromHVAC_F.wCarB_OutsideTemp  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarB_OutsideTemp" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="69" Titel="DDU_InputsFromHVAC_F.bCarB_InsideTemp1  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.bCarB_InsideTemp1" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="70" Titel="DDU_InputsFromHVAC_F.bCarB_InsideTemp2  DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.bCarB_InsideTemp2" POU="" Einheit="BYTE" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="71" Titel="DDU_InputsFromHVAC_F.wCarB_SWver        DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarB_SWver" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="72" Titel="DDU_InputsFromHVAC_F.wDriver_HoursComp1 DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wDriver_HoursComp1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="73" Titel="DDU_InputsFromHVAC_F.wCarA_HoursComp1   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarA_HoursComp1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="74" Titel="DDU_InputsFromHVAC_F.wCarA_HoursComp2   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarA_HoursComp2" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="75" Titel="DDU_InputsFromHVAC_F.wCarB_HoursComp1   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarB_HoursComp1" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+    <LogItem ID="76" Titel="DDU_InputsFromHVAC_F.wCarB_HoursComp2   DS_TCP_HVAC_STATE_F_T;" Name="DDU_InputsFromHVAC_F.wCarB_HoursComp2" POU="" Einheit="WORD" Faktor="1" Offset="0"></LogItem>
+  </LogResource>
+</RailMonitor>

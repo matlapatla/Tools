@@ -1,0 +1,17 @@
+<LogResource Name="enableHeating" Bild="pictures\trampng.png">
+
+
+KLA_C2_52_IxUmlHeizEin : switch_All_Fans_A (0 = OFF, 1 = ON)
+KLB_C2_53_IxUmlHeizEin : switch_All_Fans_B (0 = OFF, 1 = ON)
+
+IO8_C2_29_IxFB_REG_HeatA1 : switch_Heating_A1 (0 = OFF, 1 = ON)
+IO8_C2_29_IxFB_REG_HeatA2 : switch_Heating_A2 (0 = OFF, 1 = ON)
+IO8_C2_29_IxFB_REG_HeatA3 : switch_Heating_A3 (0 = OFF, 1 = ON)
+IO8_C2_29_IxFB_REG_HeatA4 : switch_Heating_A4 (0 = OFF, 1 = ON)
+
+IO13_C2_32_IxFB_REG_HeatB1 : switch_Heating_B1 (0 = OFF, 1 = ON)
+IO13_C2_32_IxFB_REG_HeatB2 : switch_Heating_B2 (0 = OFF, 1 = ON)
+IO13_C2_32_IxFB_REG_HeatB3 : switch_Heating_B3 (0 = OFF, 1 = ON)
+IO13_C2_32_IxFB_REG_HeatB4 : switch_Heating_B4 (0 = OFF, 1 = ON)
+
+
