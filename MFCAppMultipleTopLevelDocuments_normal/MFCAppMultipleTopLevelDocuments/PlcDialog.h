@@ -3,6 +3,7 @@
 #include "MFCAppMultipleTopLevelDocuments.h"
 #include "MFCAppMultipleTopLevelDocumentsView.h"
 #include "afxdialogex.h"
+#include "afxwin.h"
 
 
 // CPlcDialog dialog
@@ -34,4 +35,7 @@ public:
 	afx_msg void OnBnClickedOk();
 	CWnd* pParentCwnd;
 	std::shared_ptr<CElement> m_pPlcSelected;
+	afx_msg void OnBnClickedButtonlinkvalistfile();
+	CString m_FilePathEditBox;
+	CStatic m_FilePathEditBoxCtrl;
 };

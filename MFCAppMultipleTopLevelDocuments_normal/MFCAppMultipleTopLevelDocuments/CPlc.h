@@ -1,6 +1,7 @@
 #pragma once
 #include "CElement.h"
 #include "SysComServer.h"
+#include "CVarlistFile.h"
 
 
 
@@ -109,20 +110,12 @@ public:
 	virtual void setName(CString n);
 	virtual void setAccessPath(CString path);
 	virtual void setConfigString(CString string);
+    virtual void setVarlistFilePath(CString path);
 	virtual CString getName(void);
 	virtual CString getAccessPath(void);
 	virtual CString getConfigString(void);
+	virtual CString getVarlistFilePath(void);
 	INT getState();
-	/*
-	void setTimeOut(int time);
-	Srv_Info_Proj_T getInfoProject(void);
-	bool getConnected(void);
-	CHAR* getAccessPath(void);
-	CHAR* getConfigString(void);
-	CHAR* getName(void);
-	HANDLE getServer(void);
-	int getTimeOut(void);
-	*/
 
 private:
 	
@@ -144,12 +137,17 @@ private:
 	CString sPass;
 	CString Text;
 
+	CString VarlistFilePath;
+	CVarlistFile Varlist;
+
 	int itemCount = 0;
 	syscomItem ItemList[MAXITEMLIST];
 	syscomItem oneItem;
 
 	Srv_cmd_IO_DefMonList_T         DefMonList;
 	Srv_cmd_IO_ReadMonList_T        ReadMonList;
+
+	
 	
 public:
 	HANDLE server;

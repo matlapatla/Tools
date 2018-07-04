@@ -16,6 +16,7 @@ CPlcDialog::CPlcDialog(CWnd* pParent /*=NULL*/)
 	, m_PlcName(_T(""))
 	, m_PlcAccessPath(_T(""))
 	, m_PlcConfigString(_T(""))
+	, m_FilePathEditBox(_T(""))
 {
 	
 }
@@ -49,12 +50,15 @@ void CPlcDialog::DoDataExchange(CDataExchange* pDX)
 	DDX_Text(pDX, IDC_EDIT_PLCNAME, m_PlcName);
 	DDX_Text(pDX, IDC_EDITPLCACCPATH, m_PlcAccessPath);
 	DDX_Text(pDX, IDC_EDITPLCCONFSTRING, m_PlcConfigString);
+	DDX_Text(pDX, IDC_VARLISTFILE, m_FilePathEditBox);
+	DDX_Control(pDX, IDC_VARLISTFILE, m_FilePathEditBoxCtrl);
 }
 
 
 BEGIN_MESSAGE_MAP(CPlcDialog, CDialogEx)
 	ON_EN_CHANGE(IDC_EDIT_PLCNAME, &CPlcDialog::OnEnChangeEditPlcname)
 	ON_BN_CLICKED(IDOK, &CPlcDialog::OnBnClickedOk)
+	ON_BN_CLICKED(IDC_BUTTONLINKVALISTFILE, &CPlcDialog::OnBnClickedButtonlinkvalistfile)
 END_MESSAGE_MAP()
 
 
@@ -83,4 +87,19 @@ void CPlcDialog::OnBnClickedOk()
 	m_pPlcSelected->setAccessPath(m_PlcAccessPath);
 	m_pPlcSelected->setConfigString(m_PlcConfigString);
 	CDialogEx::OnOK();
+}
+
+
+void CPlcDialog::OnBnClickedButtonlinkvalistfile()
+{
+	// TODO: Add your control notification handler code here
+	const TCHAR szFilter[] = _T("CSV Files (*.csv)|*.csv|All Files (*.*)|*.*||");
+	CFileDialog dlg(TRUE, _T("csv"), NULL, OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, szFilter, this);
+	if (dlg.DoModal() == IDOK)
+	{
+		CString sFilePath = dlg.GetPathName();
+		m_FilePathEditBoxCtrl.SetWindowText(sFilePath);
+		std::static_pointer_cast<CPlc> (m_pPlcSelected)->setVarlistFilePath(sFilePath);
+	}
+
 }
