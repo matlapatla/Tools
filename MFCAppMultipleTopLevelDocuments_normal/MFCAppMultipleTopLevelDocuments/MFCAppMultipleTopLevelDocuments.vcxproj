@@ -197,6 +197,7 @@
     <ClInclude Include="ConnectingToPlcDlg.h" />
     <ClInclude Include="CPlc.h" />
     <ClInclude Include="CSwitch.h" />
+    <ClInclude Include="CVarlistFile.h" />
     <ClInclude Include="CVarlistView.h" />
     <ClInclude Include="CVoltMtr.h" />
     <ClInclude Include="ElementDialog.h" />
@@ -225,6 +226,7 @@
     <ClCompile Include="ConnectingToPlcDlg.cpp" />
     <ClCompile Include="CPlc.cpp" />
     <ClCompile Include="CSwitch.cpp" />
+    <ClCompile Include="CVarlistFile.cpp" />
     <ClCompile Include="CVarlistView.cpp" />
     <ClCompile Include="CVoltMtr.cpp" />
     <ClCompile Include="ElementDialog.cpp" />

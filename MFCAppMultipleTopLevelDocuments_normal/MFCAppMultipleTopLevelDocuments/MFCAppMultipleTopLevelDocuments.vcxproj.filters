@@ -93,6 +93,9 @@
     <ClInclude Include="CVarlistView.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CVarlistFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MFCAppMultipleTopLevelDocuments.cpp">
@@ -165,6 +168,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CVarlistView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CVarlistFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
