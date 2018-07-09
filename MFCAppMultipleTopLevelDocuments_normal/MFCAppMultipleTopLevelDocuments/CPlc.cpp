@@ -399,7 +399,7 @@ void CPlc::setVarlistFilePath(CString path)
 	TCHAR buf[1024];
 	_tcscpy_s(buf, path);
 	Varlist.OpenAndReadVarlistFile(buf);
-	pMainFrame->AddDockingWindow();
+	pMainFrame->AddDockingWindow(&Varlist);
 	
 }
 
