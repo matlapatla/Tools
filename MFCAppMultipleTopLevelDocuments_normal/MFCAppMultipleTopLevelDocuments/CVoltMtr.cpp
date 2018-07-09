@@ -53,9 +53,9 @@ CVoltMtr::~CVoltMtr()
 {
 }
 
-INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT iYstep, CRect* pRect, HWND hObjectHandle)
+INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT iYstep, CRect* pRect, HWND hObjectHandle, CMainFrame* MFrame)
 {
-
+	pMainFrame = MFrame;
 	if (m_StartPoint.x == 0 && m_StartPoint.y == 0)
 	{
 		m_StartPoint = startPoint;

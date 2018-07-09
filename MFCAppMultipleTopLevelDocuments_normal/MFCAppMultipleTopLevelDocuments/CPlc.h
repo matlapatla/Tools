@@ -6,6 +6,7 @@
 
 
 
+
 #define WM_REFRESHPICTURE (WM_USER + 100)
 #define MAXITEMLIST 148
 
@@ -84,7 +85,7 @@ class CPlc :
 	DECLARE_SERIAL(CPlc)
 public:
 	CPlc();
-	CPlc(CPoint startPoint);
+	CPlc(CPoint startPoint, CMainFrame* pFrame);
 	~CPlc();
 
 	int connect(void);
@@ -101,7 +102,7 @@ public:
 	HRESULT Get_MonitorListState();
 	int CPlc::GenerateMonitorList();
 
-	INT DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint = { 0,0 }, INT iXstep = 50, INT iYstep = 50, CRect* pRect = nullptr, HWND hObjectHandle = NULL);
+	INT DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint = { 0,0 }, INT iXstep = 50, INT iYstep = 50, CRect* pRect = nullptr, HWND hObjectHandle = NULL, CMainFrame* MFrame = nullptr);
 	void SetStatus(INT newStatus);
 	virtual void Serialize(CArchive& ar) override; // Serialize object
 

@@ -2,6 +2,7 @@
 #include "CPlc.h"
 #include "Resource.h"
 
+
 IMPLEMENT_SERIAL(CPlc, CElement, 1001)
 //#define WM_REFRESHPICTURE (WM_USER + 100)
 
@@ -43,9 +44,10 @@ CPlc::CPlc()
 	 sUser = "user_0";
 	 sPass = "sele0";
 	 
+	 
 }
 
-CPlc::CPlc(CPoint startPoint)
+CPlc::CPlc(CPoint startPoint, CMainFrame* pFrame)
 	: m_sIconFileNameUnknown(_T(""))
 {
 	m_plcStatus = unknownPlc;
@@ -82,6 +84,9 @@ CPlc::CPlc(CPoint startPoint)
 	sConfigString = "MEDIANAME=LAN IP_HOST=192.168.0.9 TO_INHIBIT=1 TO_ACK=0";
 	sUser = "user_0";
 	sPass = "sele0";
+
+
+	pMainFrame = pFrame;
 }
 
 
@@ -253,10 +258,12 @@ int CPlc::disconnect(void)
 	return 0;
 }
 
-INT CPlc::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT iYstep, CRect* pRect, HWND hObjectHandle)
+INT CPlc::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT iYstep, CRect* pRect, HWND hObjectHandle, CMainFrame* MFrame)
 {
 	mainWindowHwnd = hObjectHandle;
 	mainWindowCwnd = pView;
+	pMainFrame = MFrame;
+
 	if (m_StartPoint.x == 0 && m_StartPoint.y == 0)
 	{
 		m_StartPoint = startPoint;
@@ -392,6 +399,8 @@ void CPlc::setVarlistFilePath(CString path)
 	TCHAR buf[1024];
 	_tcscpy_s(buf, path);
 	Varlist.OpenAndReadVarlistFile(buf);
+	pMainFrame->AddDockingWindow();
+	
 }
 
 CString CPlc::getVarlistFilePath(void)

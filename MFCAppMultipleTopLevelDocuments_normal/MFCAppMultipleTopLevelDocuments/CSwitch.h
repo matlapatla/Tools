@@ -14,7 +14,7 @@ public:
 
 	//enum switchStatus_t { open, closed, unknown } ;
 	INT Draw(CDC* pDC, CWnd* pView, CPoint startPoint = {0,0}, INT iXstep = 50, INT iYstep = 50, CRect* pRect = nullptr);
-	INT DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint = { 0,0 }, INT iXstep = 50, INT iYstep = 50, CRect* pRect = nullptr, HWND hObjectHandle = NULL);
+	INT DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint = { 0,0 }, INT iXstep = 50, INT iYstep = 50, CRect* pRect = nullptr, HWND hObjectHandle = NULL, CMainFrame* MFrame = nullptr);
 	void SetStatus(INT newStatus);
 	virtual void Serialize(CArchive& ar) override; // Serialize object
 protected:
