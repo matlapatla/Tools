@@ -38,4 +38,7 @@ public:
 	afx_msg void OnBnClickedButtonlinkvalistfile();
 	CString m_FilePathEditBox;
 	CStatic m_FilePathEditBoxCtrl;
+
+	afx_msg void OnBnClickedButtonsearchstringinvarlist();
+	CString m_CStringSearchedVarlist;
 };

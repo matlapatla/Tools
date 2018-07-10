@@ -1005,6 +1005,20 @@ HRESULT CPlc::Get_MonitorListState()
 	return hResult;
 }
 
+
+void CPlc::SearchInVarlist(CString m_CStringSearchedInVarlist)
+
+{
+	VarlistViewPtr = pMainFrame->getVarlistViewPtr();
+	VarlistViewPtr->FindItem(m_CStringSearchedInVarlist);
+
+
+
+
+}
+
+
+
 /*
 int CPlc::SelectronVarType2VarLength(CString sVarType, DWORD * iVarLengthBits, DWORD * iVarLengthBytes, Data_Types *dtDataType, Data_Types *uiDataType)
 {

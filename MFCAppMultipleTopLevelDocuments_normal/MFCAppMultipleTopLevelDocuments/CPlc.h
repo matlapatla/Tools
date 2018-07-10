@@ -117,6 +117,7 @@ public:
 	virtual CString getConfigString(void);
 	virtual CString getVarlistFilePath(void);
 	INT getState();
+	void SearchInVarlist(CString m_CStringSearchedInVarlist);
 
 private:
 	
@@ -140,6 +141,8 @@ private:
 
 	CString VarlistFilePath;
 	CVarlistFile Varlist;
+
+	std::shared_ptr<CVarlistView> VarlistViewPtr;
 
 	int itemCount = 0;
 	syscomItem ItemList[MAXITEMLIST];

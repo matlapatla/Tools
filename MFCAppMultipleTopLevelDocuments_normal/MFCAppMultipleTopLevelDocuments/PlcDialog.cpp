@@ -17,6 +17,8 @@ CPlcDialog::CPlcDialog(CWnd* pParent /*=NULL*/)
 	, m_PlcAccessPath(_T(""))
 	, m_PlcConfigString(_T(""))
 	, m_FilePathEditBox(_T(""))
+	
+	, m_CStringSearchedVarlist(_T(""))
 {
 	
 }
@@ -52,6 +54,8 @@ void CPlcDialog::DoDataExchange(CDataExchange* pDX)
 	DDX_Text(pDX, IDC_EDITPLCCONFSTRING, m_PlcConfigString);
 	DDX_Text(pDX, IDC_VARLISTFILE, m_FilePathEditBox);
 	DDX_Control(pDX, IDC_VARLISTFILE, m_FilePathEditBoxCtrl);
+	
+	DDX_Text(pDX, IDC_EDITSTRINGTOSEARCHINVARLIST, m_CStringSearchedVarlist);
 }
 
 
@@ -59,6 +63,7 @@ BEGIN_MESSAGE_MAP(CPlcDialog, CDialogEx)
 	ON_EN_CHANGE(IDC_EDIT_PLCNAME, &CPlcDialog::OnEnChangeEditPlcname)
 	ON_BN_CLICKED(IDOK, &CPlcDialog::OnBnClickedOk)
 	ON_BN_CLICKED(IDC_BUTTONLINKVALISTFILE, &CPlcDialog::OnBnClickedButtonlinkvalistfile)
+	ON_BN_CLICKED(IDC_BUTTONSEARCHSTRINGINVARLIST, &CPlcDialog::OnBnClickedButtonsearchstringinvarlist)
 END_MESSAGE_MAP()
 
 
@@ -102,4 +107,12 @@ void CPlcDialog::OnBnClickedButtonlinkvalistfile()
 		std::static_pointer_cast<CPlc> (m_pPlcSelected)->setVarlistFilePath(sFilePath);
 	}
 
+}
+
+
+void CPlcDialog::OnBnClickedButtonsearchstringinvarlist()
+{
+	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	std::static_pointer_cast<CPlc> (m_pPlcSelected)->SearchInVarlist(m_CStringSearchedVarlist);
 }
