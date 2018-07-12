@@ -140,8 +140,8 @@ private:
 	CString Text;
 
 	CString VarlistFilePath;
-	CVarlistFile Varlist;
-
+	//CVarlistFile Varlist;
+	//std::shared_ptr<CVarlistFile> VarlistPtr;
 	std::shared_ptr<CVarlistView> VarlistViewPtr;
 
 	int itemCount = 0;

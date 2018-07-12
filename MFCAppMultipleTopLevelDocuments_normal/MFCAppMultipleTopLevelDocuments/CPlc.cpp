@@ -398,8 +398,15 @@ void CPlc::setVarlistFilePath(CString path)
 	VarlistFilePath = path;
 	TCHAR buf[1024];
 	_tcscpy_s(buf, path);
-	Varlist.OpenAndReadVarlistFile(buf);
-	pMainFrame->AddDockingWindow(&Varlist);
+	auto VarlistPtr = std::make_shared<CVarlistFile>();
+	//Varlist.OpenAndReadVarlistFile(buf);
+	VarlistPtr->OpenAndReadVarlistFile(buf);
+	pMainFrame->AddDockingWindow(VarlistPtr.get());
+	VarlistPtr.reset();
+	VarlistPtr.~shared_ptr();
+	
+	 int i=0;
+	 i++;
 	
 }
 
