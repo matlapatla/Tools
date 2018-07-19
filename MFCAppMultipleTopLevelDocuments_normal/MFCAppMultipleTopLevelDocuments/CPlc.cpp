@@ -1016,9 +1016,10 @@ HRESULT CPlc::Get_MonitorListState()
 void CPlc::SearchInVarlist(CString m_CStringSearchedInVarlist)
 
 {
-	VarlistViewPtr = pMainFrame->getVarlistViewPtr();
-	VarlistViewPtr->FindItem(m_CStringSearchedInVarlist);
-
+	pMainFrame->getVarlistViewPtr(VarlistViewPtr, VarlistViewPtrFound);
+	std::list<HTREEITEM> listOfFoundItems;
+	VarlistViewPtr->FindItem(m_CStringSearchedInVarlist, listOfFoundItems);
+	VarlistViewPtrFound->FillVarlistView(listOfFoundItems);
 
 
 

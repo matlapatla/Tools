@@ -143,6 +143,7 @@ private:
 	//CVarlistFile Varlist;
 	//std::shared_ptr<CVarlistFile> VarlistPtr;
 	std::shared_ptr<CVarlistView> VarlistViewPtr;
+	std::shared_ptr<CVarlistView> VarlistViewPtrFound;
 
 	int itemCount = 0;
 	syscomItem ItemList[MAXITEMLIST];
