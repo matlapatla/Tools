@@ -13,9 +13,9 @@ class NMTStartStopService:
         NMTStartStopService.NMTStartStopServiceCount += 1
 
     def DisplayDecoded(self):
-        if (self.cs == "1"):
+        if (self.cs == "01"):
             print (self.TimeOffset + "!!! start " + "Node-ID %d" % int(self.NodeID,16))
-        elif (self.cs == "2"):
+        elif (self.cs == "02"):
             print (self.TimeOffset + "!!! stop " + "Node-ID %d" % int(self.NodeID,16))
         elif (self.cs == "80"): #128 
             print (self.TimeOffset + "!!! enter pre-operational " + "Node-ID %d" % int(self.NodeID,16))
@@ -38,13 +38,13 @@ class NMTErrorControl:
 
     def DisplayDecoded(self):
         if (self.s == "00"):
-            print (self.TimeOffset + "--- Boot-up " + "Node-ID %d" % self.NodeID)
+            print (self.TimeOffset + "!-- Boot-up " + "Node-ID %d" % self.NodeID)
         elif (self.s == "04"):
-            print (self.TimeOffset + "--- Stopped " + "Node-ID %d" % self.NodeID)
+            print (self.TimeOffset + "!-- Stopped " + "Node-ID %d" % self.NodeID)
         elif (self.s == "05"): 
             print (self.TimeOffset + " Operational " + "Node-ID %d" % self.NodeID)
         elif (self.s == "7F"): #127
-            print (self.TimeOffset + "--- Pre-operational " + "Node-ID %d" % self.NodeID)
+            print (self.TimeOffset + "!-- Pre-operational " + "Node-ID %d" % self.NodeID)
         
 
 
