@@ -14,7 +14,8 @@ class EMCYObject:
         self.operationalStateCount = 0
 
     def DisplayDecoded(self):
-       
-            print (self.TimeOffset + "-!- EMCY write " + "CAN-ID %d" + "Node-ID %d" % int(self.CANID,16), self.NodeID)
-            
+            if (self.CANID == "0100"):
+                print (self.TimeOffset + "-!- TIME " + "CAN-ID %d" % int(self.CANID,16) )
+            else:
+                print (self.TimeOffset + "-!- EMCY write " + "CAN-ID = %d " % int(self.CANID,16) + "Node-ID %d" % self.NodeID)
         
