@@ -1,7 +1,10 @@
 
 import sys
 import string
-
+import NMTStartStopService
+import NMTErrorControl
+import SYNCObject
+'''
 class NMTStartStopService:
     'Common class for the CANOpen NMT Start/Stop service'
     NMTStartStopServiceCount = 0
@@ -36,19 +39,41 @@ class NMTErrorControl:
         self.TimeOffset = TimeOffset
         NMTErrorControl.NMTErrorControlCount += 1
 
+        self.operationalStateCount = 0
+
     def DisplayDecoded(self):
         if (self.s == "00"):
             print (self.TimeOffset + "!-- Boot-up " + "Node-ID %d" % self.NodeID)
+            self.operationalStateCount = 0
         elif (self.s == "04"):
             print (self.TimeOffset + "!-- Stopped " + "Node-ID %d" % self.NodeID)
+            self.operationalStateCount = 0
         elif (self.s == "05"): 
-            print (self.TimeOffset + " Operational " + "Node-ID %d" % self.NodeID)
+            self.operationalStateCount += 1
+            #if (self.operationalStateCount == 1):
+            print (self.TimeOffset + " Operational " + "Node-ID %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
+
         elif (self.s == "7F"): #127
             print (self.TimeOffset + "!-- Pre-operational " + "Node-ID %d" % self.NodeID)
+            self.operationalStateCount = 0
         
 
+class SYNCObject:
+    'Common class for the CANOpen SyncObject service'
+    SYNCObjectCount = 0
+    def __init__ (self, CANID, TimeOffset, Counter = "-1"):
+        self.CANID = CANID
+        self.Counter = Counter
+        self.TimeOffset = TimeOffset
+        SYNCObject.NMTStartStopServiceCount += 1
 
-
+    def DisplayDecoded(self):
+        if (self.Counter == "-1"):
+            print (self.TimeOffset + "!!! SYNC-Object ")
+        else:
+            print (self.TimeOffset + "!!! SYNC-Object " + " Counter = %d" % int(self.Counter,16))
+       
+'''
 if __name__ == '__main__':
     if (len(sys.argv) == 1):
         print ("Start the script with the name of the log file stated as the parameter.")
@@ -62,13 +87,17 @@ if __name__ == '__main__':
                        words.append(tempword)
                if len(words) > 3:
                    if (words[3] == "0000"):
-                       NMTStartStopServiceInstance = NMTStartStopService(words[3], words[6], words[7], words[1])
+                       NMTStartStopServiceInstance = NMTStartStopService.NMTStartStopService(words[3], words[6], words[7], words[1])
                        NMTStartStopServiceInstance.DisplayDecoded()
                    if (words[3] >= "0700" and words[3] < "0800"):
-                       NMTErrorControlInstance = NMTErrorControl(words[3], 0, words[6],  words[1])
+                       NMTErrorControlInstance = NMTErrorControl.NMTErrorControl(words[3], 0, words[6],  words[1])
                        NMTErrorControlInstance.DisplayDecoded()
-        
-
+                   if ((words[3] == "0080") and len(words) > 4):
+                       SYNCObjectInstance = SYNCObject.SYNCObject(words[3], words[1], words[6])
+                       SYNCObjectInstance.DisplayDecoded()
+                   if ((words[3] == "0080") and len(words) > 4):
+                       SYNCObjectInstance = SYNCObject.SYNCObject(words[3], words[1])
+                       SYNCObjectInstance.DisplayDecoded()
 
 
         
