@@ -25,6 +25,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CANOpenAnalyzator.py" />
+    <Compile Include="EMCYObject.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="NMTErrorControl.py">
       <SubType>Code</SubType>
     </Compile>

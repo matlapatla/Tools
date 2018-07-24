@@ -4,6 +4,7 @@ import string
 import NMTStartStopService
 import NMTErrorControl
 import SYNCObject
+import EMCYObject
 '''
 class NMTStartStopService:
     'Common class for the CANOpen NMT Start/Stop service'
@@ -98,7 +99,9 @@ if __name__ == '__main__':
                    if ((words[3] == "0080") and len(words) > 4):
                        SYNCObjectInstance = SYNCObject.SYNCObject(words[3], words[1])
                        SYNCObjectInstance.DisplayDecoded()
-
+                   if (words[3] >= "0080" and words[3] < "0180"):
+                       EMCYObjectInstance = EMCYObject.EMCYObject(words[3], words[1])
+                       EMCYObjectInstance.DisplayDecoded()
 
         
         
