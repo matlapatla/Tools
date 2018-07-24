@@ -11,6 +11,9 @@
     <OutputPath>.</OutputPath>
     <Name>CANOpenAnalyzator</Name>
     <RootNamespace>CANOpenAnalyzator</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>c:\Users\vostom\Documents\TramOstrava\PCANTraces\CAN1_Tram1702_fault.trc</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
