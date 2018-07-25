@@ -9,7 +9,8 @@ class SYNCObject:
 
     def DisplayDecoded(self):
         if (self.Counter == "-1"):
-            print (self.TimeOffset + "!!- SYNC-Object ")
+            print (self.TimeOffset + "SYNCObject SYNC-Object ")
         else:
-            print (self.TimeOffset + "!!- SYNC-Object " + " Counter = %d" % int(self.Counter,16))
+            print (self.TimeOffset + "SYNCObject SYNC-Object " + " Counter = %d" % int(self.Counter,16))
 
+            

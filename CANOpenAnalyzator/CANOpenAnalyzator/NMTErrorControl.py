@@ -13,17 +13,17 @@ class NMTErrorControl:
 
     def DisplayDecoded(self):
         if (self.s == "00"):
-            print (self.TimeOffset + "!-- Boot-up " + "Node-ID = %d" % self.NodeID)
+            print (self.TimeOffset + "NMTErrorControl Boot-up " + "Node-ID = %d" % self.NodeID)
             self.operationalStateCount = 0
         elif (self.s == "04"):
-            print (self.TimeOffset + "!-- Stopped " + "Node-ID = %d" % self.NodeID)
+            print (self.TimeOffset + "NMTErrorControl Stopped " + "Node-ID = %d" % self.NodeID)
             self.operationalStateCount = 0
         elif (self.s == "05"): 
             self.operationalStateCount += 1
             #if (self.operationalStateCount == 1):
-            print (self.TimeOffset + " Operational " + "Node-ID = %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
+            print (self.TimeOffset + "NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
 
         elif (self.s == "7F"): #127
-            print (self.TimeOffset + "!-- Pre-operational " + "Node-ID = %d" % self.NodeID)
+            print (self.TimeOffset + "NMTErrorControl Pre-operational " + "Node-ID = %d" % self.NodeID)
             self.operationalStateCount = 0
         
