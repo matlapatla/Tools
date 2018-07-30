@@ -21,8 +21,8 @@ class NMTErrorControl:
         elif (self.s == "05"): 
             self.operationalStateCount += 1
             #if (self.operationalStateCount == 1):
-            print (self.TimeOffset + "NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
-
+            #print (self.TimeOffset + "NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
+            print (self.TimeOffset + "NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID)
         elif (self.s == "7F"): #127
             print (self.TimeOffset + "NMTErrorControl Pre-operational " + "Node-ID = %d" % self.NodeID)
             self.operationalStateCount = 0
