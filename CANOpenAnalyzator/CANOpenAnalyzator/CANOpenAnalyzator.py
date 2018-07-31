@@ -5,77 +5,11 @@ import NMTStartStopService
 import NMTErrorControl
 import SYNCObject
 import EMCYObject
-'''
-class NMTStartStopService:
-    'Common class for the CANOpen NMT Start/Stop service'
-    NMTStartStopServiceCount = 0
-    def __init__ (self, CANID, cs, NodeID, TimeOffset):
-        self.CANID = CANID
-        self.cs = cs
-        self.NodeID = NodeID
-        self.TimeOffset = TimeOffset
-        NMTStartStopService.NMTStartStopServiceCount += 1
+import PDO
 
-    def DisplayDecoded(self):
-        if (self.cs == "01"):
-            print (self.TimeOffset + "!!! start " + "Node-ID %d" % int(self.NodeID,16))
-        elif (self.cs == "02"):
-            print (self.TimeOffset + "!!! stop " + "Node-ID %d" % int(self.NodeID,16))
-        elif (self.cs == "80"): #128 
-            print (self.TimeOffset + "!!! enter pre-operational " + "Node-ID %d" % int(self.NodeID,16))
-        elif (self.cs == "81"): #129
-            print (self.TimeOffset + "!!! reset node " + "Node-ID %d" % int(self.NodeID,16))
-        elif (self.cs == "82"): #130
-            print (self.TimeOffset + "!!! reset communication " + "Node-ID %d" % int(self.NodeID,16))
-
-
-class NMTErrorControl:
-    'Common class for the CANOpen NMT Error Control'
-    NMTErrorControlCount = 0
-    def __init__ (self, CANID, r, s, TimeOffset):
-        self.CANID = CANID
-        self.r = r
-        self.s = s
-        self.NodeID = int(self.CANID,16) - 1792
-        self.TimeOffset = TimeOffset
-        NMTErrorControl.NMTErrorControlCount += 1
-
-        self.operationalStateCount = 0
-
-    def DisplayDecoded(self):
-        if (self.s == "00"):
-            print (self.TimeOffset + "!-- Boot-up " + "Node-ID %d" % self.NodeID)
-            self.operationalStateCount = 0
-        elif (self.s == "04"):
-            print (self.TimeOffset + "!-- Stopped " + "Node-ID %d" % self.NodeID)
-            self.operationalStateCount = 0
-        elif (self.s == "05"): 
-            self.operationalStateCount += 1
-            #if (self.operationalStateCount == 1):
-            print (self.TimeOffset + " Operational " + "Node-ID %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
-
-        elif (self.s == "7F"): #127
-            print (self.TimeOffset + "!-- Pre-operational " + "Node-ID %d" % self.NodeID)
-            self.operationalStateCount = 0
-        
-
-class SYNCObject:
-    'Common class for the CANOpen SyncObject service'
-    SYNCObjectCount = 0
-    def __init__ (self, CANID, TimeOffset, Counter = "-1"):
-        self.CANID = CANID
-        self.Counter = Counter
-        self.TimeOffset = TimeOffset
-        SYNCObject.NMTStartStopServiceCount += 1
-
-    def DisplayDecoded(self):
-        if (self.Counter == "-1"):
-            print (self.TimeOffset + "!!! SYNC-Object ")
-        else:
-            print (self.TimeOffset + "!!! SYNC-Object " + " Counter = %d" % int(self.Counter,16))
-       
-'''
 if __name__ == '__main__':
+    T_PDO1_018DObjectInstance = 0
+    T_RDO1_0200ObjectInstance = 0
     if (len(sys.argv) == 1):
         print ("Start the script with the name of the log file stated as the parameter.")
     else:
@@ -102,9 +36,15 @@ if __name__ == '__main__':
                    if (words[3] >= "0080" and words[3] < "0180"):
                        EMCYObjectInstance = EMCYObject.EMCYObject(words[3], words[1])
                        EMCYObjectInstance.DisplayDecoded()
-
-        
-        
-
-
-
+                   if (words[3] == "018D"):
+                       if (isinstance(T_PDO1_018DObjectInstance, PDO.PDO)):
+                           T_PDO1_018DObjectInstance.DisplayDecoded(words[3], words[1], words[5], words, 3000)
+                       else:
+                           pass
+                           #T_PDO1_018DObjectInstance = PDO.PDO(words[3], words[1], words[5], words, 13)
+                   if (words[3] == "020E"):
+                       if (isinstance(T_RDO1_0200ObjectInstance, PDO.PDO)):
+                           T_RDO1_0200ObjectInstance.DisplayDecoded(words[3], words[1], words[5], words, 400)
+                       else:                      
+                           T_RDO1_0200ObjectInstance = PDO.PDO(words[3], words[1], words[5], words, 10, 11)
+                      

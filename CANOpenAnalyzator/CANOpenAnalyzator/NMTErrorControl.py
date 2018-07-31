@@ -12,18 +12,19 @@ class NMTErrorControl:
         self.operationalStateCount = 0
 
     def DisplayDecoded(self):
-        if (self.s == "00"):
-            print (self.TimeOffset + "NMTErrorControl Boot-up " + "Node-ID = %d" % self.NodeID)
-            self.operationalStateCount = 0
-        elif (self.s == "04"):
-            print (self.TimeOffset + "NMTErrorControl Stopped " + "Node-ID = %d" % self.NodeID)
-            self.operationalStateCount = 0
-        elif (self.s == "05"): 
-            self.operationalStateCount += 1
-            #if (self.operationalStateCount == 1):
-            #print (self.TimeOffset + "NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
-            print (self.TimeOffset + "NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID)
-        elif (self.s == "7F"): #127
-            print (self.TimeOffset + "NMTErrorControl Pre-operational " + "Node-ID = %d" % self.NodeID)
-            self.operationalStateCount = 0
+        if (self.NodeID == 14) or (self.NodeID == 15):
+            if (self.s == "00"):
+                print (self.TimeOffset + " NMTErrorControl Boot-up " + "Node-ID = %d" % self.NodeID)
+                self.operationalStateCount = 0
+            elif (self.s == "04"):
+                print (self.TimeOffset + " NMTErrorControl Stopped " + "Node-ID = %d" % self.NodeID)
+                self.operationalStateCount = 0
+            elif (self.s == "05"): 
+                self.operationalStateCount += 1
+                #if (self.operationalStateCount == 1):
+                #print (self.TimeOffset + "NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID + " operationalStateCount = " + str(self.operationalStateCount))
+                print (self.TimeOffset + " NMTErrorCtrl Operational " + "Node-ID = %d" % self.NodeID)
+            elif (self.s == "7F"): #127
+                print (self.TimeOffset + " NMTErrorControl Pre-operational " + "Node-ID = %d" % self.NodeID)
+                self.operationalStateCount = 0
         

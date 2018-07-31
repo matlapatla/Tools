@@ -12,7 +12,7 @@
     <Name>CANOpenAnalyzator</Name>
     <RootNamespace>CANOpenAnalyzator</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>c:\Users\vostom\Documents\TramOstrava\PCANTraces\CAN1_Tram1702_fault.trc</CommandLineArguments>
+    <CommandLineArguments>c:\Users\vostom\Documents\TramOstrava\PCANTraces\CAN1_Tram1702_240718_0930startup.trc &gt; ./log</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -35,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SYNCObject.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PDO.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

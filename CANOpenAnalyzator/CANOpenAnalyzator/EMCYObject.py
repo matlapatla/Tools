@@ -15,7 +15,7 @@ class EMCYObject:
 
     def DisplayDecoded(self):
             if (self.CANID == "0100"):
-                print (self.TimeOffset + "TIME " + "CAN-ID %d" % int(self.CANID,16) )
+                print (self.TimeOffset + " TIME " + "CAN-ID %d" % int(self.CANID,16) )
             else:
-                print (self.TimeOffset + "EMCYObject EMCY write " + "CAN-ID = %d " % int(self.CANID,16) + "Node-ID %d" % self.NodeID)
+                print (self.TimeOffset + " EMCYObject EMCY write " + "CAN-ID = %d " % int(self.CANID,16) + "Node-ID %d" % self.NodeID)
         
