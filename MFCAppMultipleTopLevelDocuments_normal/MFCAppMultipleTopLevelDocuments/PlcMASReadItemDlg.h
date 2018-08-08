@@ -35,6 +35,9 @@ public:
 
 	CString varAbsAddr;
 	CString sVariableSelectronType;
+	CString sVariableVarlistName;
+
+
 	afx_msg void OnBnClickedButtonsetmonitorlist();
 	afx_msg void OnBnClickedButtonreadmonitorlist();
 	afx_msg void OnBnClickedButtongeneratemonitorlist();
@@ -46,4 +49,9 @@ public:
 	afx_msg void OnBnClickedButtonmassetitem();
 	afx_msg void OnBnClickedButtonrunmasforceremoveabsolut();
 	afx_msg void OnBnClickedButtonmaswriteitemabsolute();
+	
+	afx_msg void OnBnClickedOk();
+	CEdit m_VariableVarlistNameCtrl;
+	CEdit m_VarAbsAddressVarlistCtrl;
+	CEdit m_VariableTypeVarlistCtrl;
 };

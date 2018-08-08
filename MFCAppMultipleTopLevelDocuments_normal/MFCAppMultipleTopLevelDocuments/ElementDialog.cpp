@@ -19,6 +19,7 @@ CElementDialog::CElementDialog(CWnd* pParent /*=NULL*/)
 	, m_VarType(_T(""))
 	, m_LowestValue(_T(""))
 	, m_HighestValue(_T(""))
+	, m_ElementNameVarlist(_T(""))
 {
 
 }
@@ -38,6 +39,8 @@ CElementDialog::CElementDialog(std::shared_ptr<CElement> ptr, CWnd* pParent)
 	m_pPlcSelected->getLowestValue(m_LowestValue);
 	m_pPlcSelected->getHighestValue(m_HighestValue);
 	//PostMessage(pParent->GetTopWindow, WM_REFRESHPICTURE, 0);
+	m_pPlcSelected->getElementNameVarlist(m_ElementNameVarlist);
+
 }
 
 CElementDialog::~CElementDialog()
@@ -53,6 +56,14 @@ void CElementDialog::DoDataExchange(CDataExchange* pDX)
 	DDX_Text(pDX, IDC_EDIT_VARTYPE, m_VarType);
 	DDX_Text(pDX, IDC_EDITLOWESTVALUE, m_LowestValue);
 	DDX_Text(pDX, IDC_EDITHIGHESTVALUE, m_HighestValue);
+	DDX_Text(pDX, IDC_EDIT_ELEMENTNAME, m_ElementNameVarlist);
+	DDX_Control(pDX, IDC_EDIT_ELEMNAME, m_ElementNameCtrl);
+	DDX_Control(pDX, IDC_EDIT_PLCNAME, m_PlcNameCtrl);
+	DDX_Control(pDX, IDC_EDIT_ELEMENTNAME, m_ElementNameVarlistCtrl);
+	DDX_Control(pDX, IDC_EDIT_ELEMADDRESS, m_ElementAddressCtrl);
+	DDX_Control(pDX, IDC_EDIT_VARTYPE, m_VarTypeCtrl);
+	DDX_Control(pDX, IDC_EDITLOWESTVALUE, m_LowestValueCtrl);
+	DDX_Control(pDX, IDC_EDITHIGHESTVALUE, m_HighestValueCtrl);
 }
 
 
@@ -76,6 +87,8 @@ void CElementDialog::OnBnClickedOk()
 	m_pPlcSelected->setDlgRunning(false);
 	m_pPlcSelected->setLowestValue(m_LowestValue);
 	m_pPlcSelected->setHighestValue(m_HighestValue);
+
+	m_pPlcSelected->setElementNameVarlist(m_ElementNameVarlist);
 	//InvalidateRect(nullptr);
 	//UpdateWindow();
 	CDialogEx::OnOK();
@@ -89,4 +102,16 @@ void CElementDialog::OnBnClickedCancel()
 	InvalidateRect(nullptr);
 	UpdateWindow();
 	CDialogEx::OnCancel();
+}
+
+
+void CElementDialog::FillEditBox(std::shared_ptr<CElement> ptr)
+{
+	m_ElementNameCtrl.SetWindowTextW(m_ElementName);
+	m_PlcNameCtrl.SetWindowTextW(m_PlcName);
+	m_ElementAddressCtrl.SetWindowTextW(m_ElementAddress);
+	m_VarTypeCtrl.SetWindowTextW(m_VarType);
+	m_LowestValueCtrl.SetWindowTextW(m_LowestValue);
+	m_HighestValueCtrl.SetWindowTextW(m_HighestValue);
+	m_ElementNameVarlistCtrl.SetWindowTextW(m_ElementNameVarlist);
 }

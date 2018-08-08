@@ -111,8 +111,9 @@ INT CBulb::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT
 	pDC->SetBkMode(TRANSPARENT);
 	pDC->SetTextColor(RGB(255, 0, 255));
 	CPoint ptScroll = ((CScrollView*)pView)->GetScrollPosition();
-	pDC->TextOut(m_StartPoint.x, m_StartPoint.y + 70, CString(_T("Bulb = " + sValue)));
-
+	//pDC->TextOut(m_StartPoint.x, m_StartPoint.y + 70, CString(_T("Bulb = " + sValue)));
+	pDC->TextOut(m_StartPoint.x, m_StartPoint.y + 70, CString((CElement::sElementName + " = " + sValue)));
+	
 
 	if (xDlgRunning) this->drawMagentaBorders(pDC, iXstep, iYstep);
 

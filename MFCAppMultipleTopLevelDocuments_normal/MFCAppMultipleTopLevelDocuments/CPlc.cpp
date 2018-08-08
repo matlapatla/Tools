@@ -43,7 +43,9 @@ CPlc::CPlc()
 	 sConfigString = "MEDIANAME=LAN IP_HOST=192.168.0.9 TO_INHIBIT=1 TO_ACK=0";
 	 sUser = "user_0";
 	 sPass = "sele0";
-	 
+	 DialogMasReadItemVar.VariableVarlistName = L"";
+	 DialogMasReadItemVar.VariableVarlistAdrress = L"";
+	 DialogMasReadItemVar.VariableVarlistType = L"";
 	 
 }
 
@@ -87,6 +89,10 @@ CPlc::CPlc(CPoint startPoint, CMainFrame* pFrame)
 
 
 	pMainFrame = pFrame;
+
+	DialogMasReadItemVar.VariableVarlistName = L"";
+	DialogMasReadItemVar.VariableVarlistAdrress = L"";
+	DialogMasReadItemVar.VariableVarlistType = L"";
 }
 
 
@@ -1005,9 +1011,6 @@ HRESULT CPlc::Get_MonitorListState()
 
 	hResult = MAS_MonitorListState(server, &MonListState, NULL, timeOut);
 
-	
-
-
 
 	return hResult;
 }
@@ -1020,135 +1023,22 @@ void CPlc::SearchInVarlist(CString m_CStringSearchedInVarlist)
 	std::list<HTREEITEM> listOfFoundItems;
 	VarlistViewPtr->FindItem(m_CStringSearchedInVarlist, listOfFoundItems);
 	VarlistViewPtrFound->FillVarlistView(listOfFoundItems);
-
-
-
 }
 
-
-
-/*
-int CPlc::SelectronVarType2VarLength(CString sVarType, DWORD * iVarLengthBits, DWORD * iVarLengthBytes, Data_Types *dtDataType, Data_Types *uiDataType)
+void CPlc::setDialogMasReadItemValues(CString name, CString address, CString type)
 {
-	if (sVarType == _T("BOOL")) 
-	{
-		*iVarLengthBits = 1;
-		*iVarLengthBytes = 1; 
-		*dtDataType = svtBOOL;
-		*uiDataType = BIT1;
-		return 0;
-	}
-	if (sVarType == _T("BYTE")) 
-	{
-		*iVarLengthBits = 8;
-		*iVarLengthBytes = 1; 
-		*dtDataType = svtBYTE;
-		*uiDataType = BIT8;
-		return 0;
-	}
-	if (sVarType == _T("WORD")) 
-	{	
-		*iVarLengthBits = 16;
-		*iVarLengthBytes = 2; 
-		*dtDataType = svtWORD;
-		*uiDataType = BIT16;
-		return 0;
-	}
-	if (sVarType == _T("DWORD"))
-	{
-		*iVarLengthBits = 32; 
-		*iVarLengthBytes = 4;
-		*dtDataType = svtDWORD;
-		*uiDataType = BIT32;
-		return 0;
-	}
-	if (sVarType == _T("SINT"))
-	{
-		*iVarLengthBits = 8;
-		*iVarLengthBytes = 1;
-		*dtDataType = svtSINT;
-		*uiDataType = BIT8;
-		return 0;
-	}
-	if (sVarType == _T("INT")) 
-	{
-		*iVarLengthBits = 16;
-		*iVarLengthBytes = 2;
-		*dtDataType = svtINT;
-		*uiDataType = BIT16;
-		return 0;
-	}
-	if (sVarType == _T("DINT"))  
-	{
-		*iVarLengthBits = 32;
-		*iVarLengthBytes = 4;
-		*dtDataType = svtDINT;
-		*uiDataType = BIT32;
-		return 0;
-	}
-	if (sVarType == _T("USINT"))  
-	{
-		*iVarLengthBits = 8;
-		*iVarLengthBytes = 1;
-		*dtDataType = svtUSINT;
-		*uiDataType = BIT8;
-		return 0;
-	}
-	if (sVarType == _T("UINT"))
-	{
-		*iVarLengthBits = 16;
-		*iVarLengthBytes = 2;
-		*dtDataType = svtUINT;
-		*uiDataType = BIT16;
-		return 0;
-	}
-	if (sVarType == _T("UDINT")) 
-	{
-		*iVarLengthBits = 32;
-		*iVarLengthBytes = 4;
-		*dtDataType = svtUDINT;
-		*uiDataType = BIT32;
-		return 0;
-	}
-	if (sVarType == _T("REAL"))  
-	{
-		*iVarLengthBits = 32;
-		*iVarLengthBytes = 4;
-		*dtDataType = svtREAL;
-		*uiDataType = BIT32;
-		return 0;
-	}
-	if (sVarType == _T("LREAL"))
-	{
-		*iVarLengthBits = 64;
-		*iVarLengthBytes = 8;
-		*dtDataType = svtLREAL;
-		*uiDataType = BIT64;
-		return 0;
-	}
 
-	if (sVarType == _T("TIME"))
-	{
-		*iVarLengthBits = 32;
-		*iVarLengthBytes = 4;
-		*dtDataType = svtTIME;
-		*uiDataType = BIT32;
-		return 0;
-	}
-
-	if (sVarType == _T("DATE_AND_TIME"))
-	{
-		*iVarLengthBits = 32;
-		*iVarLengthBytes = 4;
-		*dtDataType = svtDATE_AND_TIME;
-		*uiDataType = BIT32;
-		return 0;
-	}
-
-
-	*iVarLengthBits = 0;
-	*iVarLengthBytes = 0;
-	*dtDataType = svtUNKNOWN;
-	return 1;
+	DialogMasReadItemVar.VariableVarlistName = name;
+	DialogMasReadItemVar.VariableVarlistAdrress = address;
+	DialogMasReadItemVar.VariableVarlistType = type;
 }
-*/
+
+
+void CPlc::getDialogMasReadItemValues(CString & name, CString & address, CString & type)
+{
+
+	name = DialogMasReadItemVar.VariableVarlistName;
+	address = DialogMasReadItemVar.VariableVarlistAdrress;
+	type = DialogMasReadItemVar.VariableVarlistType;
+
+}

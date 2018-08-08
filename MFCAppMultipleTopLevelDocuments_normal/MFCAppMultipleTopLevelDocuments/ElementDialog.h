@@ -1,6 +1,7 @@
 #pragma once
 #include <memory> // for std::shared_ptr
 #include "CElement.h"
+#include "afxwin.h"
 
 #define WM_REFRESHPICTURE (WM_USER + 100)
 // CElementDialog dialog
@@ -35,4 +36,14 @@ public:
 	afx_msg void OnBnClickedCancel();
 	CString m_LowestValue;
 	CString m_HighestValue;
+	CString m_ElementNameVarlist;
+	CEdit m_ElementNameCtrl;
+	CEdit m_PlcNameCtrl;
+	CEdit m_ElementNameVarlistCtrl;
+	CEdit m_ElementAddressCtrl;
+	CEdit m_VarTypeCtrl;
+	CEdit m_LowestValueCtrl;
+	CEdit m_HighestValueCtrl;
+
+	afx_msg void FillEditBox(std::shared_ptr<CElement>);
 };

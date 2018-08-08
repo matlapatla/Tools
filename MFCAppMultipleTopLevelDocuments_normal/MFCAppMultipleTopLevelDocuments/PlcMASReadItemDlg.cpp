@@ -20,8 +20,10 @@ CPlcMASReadItemDlg::CPlcMASReadItemDlg(CWnd* pParent /*=NULL*/)
 	, m_MasReadItemVar(_T(""))
 	, m_RequestedVariableValue(_T(""))
 	, m_IncludeToForceList(FALSE)
+	, sVariableVarlistName(_T(""))
 {
-
+	
+	
 }
 
 CPlcMASReadItemDlg::~CPlcMASReadItemDlg()
@@ -37,6 +39,10 @@ void CPlcMASReadItemDlg::DoDataExchange(CDataExchange* pDX)
 	DDX_Control(pDX, IDC_EDITMASREADITEMVAL, m_EditControl);
 	DDX_Text(pDX, IDC_EDITREQUESTEDVARVALUE, m_RequestedVariableValue);
 	DDX_Check(pDX, IDC_CHECKINCLUDETOFORCELIST, m_IncludeToForceList);
+	DDX_Text(pDX, IDC_EDITMASREADDLGVARVARLISTNAME, sVariableVarlistName);
+	DDX_Control(pDX, IDC_EDITMASREADDLGVARVARLISTNAME, m_VariableVarlistNameCtrl);
+	DDX_Control(pDX, IDC_EDIT1, m_VarAbsAddressVarlistCtrl);
+	DDX_Control(pDX, IDC_EDIT2, m_VariableTypeVarlistCtrl);
 }
 
 
@@ -49,6 +55,7 @@ BEGIN_MESSAGE_MAP(CPlcMASReadItemDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTONMASSETITEM, &CPlcMASReadItemDlg::OnBnClickedButtonmassetitem)
 	ON_BN_CLICKED(IDC_BUTTONRUNMASFORCEREMOVEABSOLUT, &CPlcMASReadItemDlg::OnBnClickedButtonrunmasforceremoveabsolut)
 	ON_BN_CLICKED(IDC_BUTTONMASWRITEITEMABSOLUTE, &CPlcMASReadItemDlg::OnBnClickedButtonmaswriteitemabsolute)
+	ON_BN_CLICKED(IDOK, &CPlcMASReadItemDlg::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
@@ -58,7 +65,11 @@ void CPlcMASReadItemDlg::setpPlc(std::shared_ptr<CElement> ptr)
 {
 
 	m_pPlcSelected = ptr;
-
+	CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
+	pPlc->getDialogMasReadItemValues(sVariableVarlistName, varAbsAddr, sVariableSelectronType);
+	m_VariableVarlistNameCtrl.SetWindowTextW(sVariableVarlistName);
+	m_VarAbsAddressVarlistCtrl.SetWindowTextW(varAbsAddr);
+	m_VariableTypeVarlistCtrl.SetWindowTextW(sVariableSelectronType);
 }
 
 void CPlcMASReadItemDlg::OnBnClickedButtonmasreaditem()
@@ -67,8 +78,7 @@ void CPlcMASReadItemDlg::OnBnClickedButtonmasreaditem()
 	UpdateData(TRUE);
 	CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
 	pPlc->callMASReadItem(varAbsAddr, sVariableSelectronType, m_MasReadItemVar);
-	m_EditControl.SetWindowTextW(m_MasReadItemVar);
-	//UpdateData(TRUE);
+	m_EditControl.SetWindowTextW(m_MasReadItemVar);	
 }
 
 
@@ -141,4 +151,15 @@ void CPlcMASReadItemDlg::OnBnClickedButtonmaswriteitemabsolute()
 	CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
 	pPlc->callMASWriteItemAbsolute(varAbsAddr, sVariableSelectronType, m_RequestedVariableValue);
 
+}
+
+
+void CPlcMASReadItemDlg::OnBnClickedOk()
+{
+	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
+	pPlc->setDialogMasReadItemValues(sVariableVarlistName, varAbsAddr, sVariableSelectronType);
+	
+	CDialogEx::OnOK();
 }

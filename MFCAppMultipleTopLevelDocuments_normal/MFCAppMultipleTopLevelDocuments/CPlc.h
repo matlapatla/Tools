@@ -119,6 +119,9 @@ public:
 	INT getState();
 	void SearchInVarlist(CString m_CStringSearchedInVarlist);
 
+	void setDialogMasReadItemValues(CString, CString, CString);
+	void getDialogMasReadItemValues(CString &, CString &, CString &);
+
 private:
 	
 	CHAR name[64];
@@ -152,7 +155,11 @@ private:
 	Srv_cmd_IO_DefMonList_T         DefMonList;
 	Srv_cmd_IO_ReadMonList_T        ReadMonList;
 
-	
+	struct DialogMasReadItemVars {
+		CString VariableVarlistName;
+		CString VariableVarlistAdrress;
+		CString VariableVarlistType;
+	} DialogMasReadItemVar;
 	
 public:
 	HANDLE server;
