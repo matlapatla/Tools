@@ -56,6 +56,8 @@ BEGIN_MESSAGE_MAP(CPlcMASReadItemDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTONRUNMASFORCEREMOVEABSOLUT, &CPlcMASReadItemDlg::OnBnClickedButtonrunmasforceremoveabsolut)
 	ON_BN_CLICKED(IDC_BUTTONMASWRITEITEMABSOLUTE, &CPlcMASReadItemDlg::OnBnClickedButtonmaswriteitemabsolute)
 	ON_BN_CLICKED(IDOK, &CPlcMASReadItemDlg::OnBnClickedOk)
+	ON_BN_CLICKED(IDC_BUTTONREADMONITORLISTPERIODICALLY, &CPlcMASReadItemDlg::OnBnClickedButtonreadmonitorlistperiodically)
+	ON_BN_CLICKED(IDC_BUTTONSTOPREADMONITORLISTPERIODICALLY, &CPlcMASReadItemDlg::OnBnClickedButtonstopreadmonitorlistperiodically)
 END_MESSAGE_MAP()
 
 
@@ -162,4 +164,28 @@ void CPlcMASReadItemDlg::OnBnClickedOk()
 	pPlc->setDialogMasReadItemValues(sVariableVarlistName, varAbsAddr, sVariableSelectronType);
 	
 	CDialogEx::OnOK();
+}
+
+
+void CPlcMASReadItemDlg::OnBnClickedButtonreadmonitorlistperiodically()
+{
+	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
+	pPlc->Read_MonitorListPeriodicStart(100);
+	//pPlc->getMainWindowHnd();
+
+	(pPlc->getMainWindowCwnd())->SendMessage(WM_REFRESHPICTURE, 0, 0);
+}
+
+
+void CPlcMASReadItemDlg::OnBnClickedButtonstopreadmonitorlistperiodically()
+{
+	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
+	pPlc->Read_MonitorListPeriodicStop();
+	//pPlc->getMainWindowHnd();
+
+	(pPlc->getMainWindowCwnd())->SendMessage(WM_REFRESHPICTURE, 0, 0);
 }

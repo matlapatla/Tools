@@ -54,4 +54,6 @@ public:
 	CEdit m_VariableVarlistNameCtrl;
 	CEdit m_VarAbsAddressVarlistCtrl;
 	CEdit m_VariableTypeVarlistCtrl;
+	afx_msg void OnBnClickedButtonreadmonitorlistperiodically();
+	afx_msg void OnBnClickedButtonstopreadmonitorlistperiodically();
 };

@@ -46,7 +46,7 @@ CPlc::CPlc()
 	 DialogMasReadItemVar.VariableVarlistName = L"";
 	 DialogMasReadItemVar.VariableVarlistAdrress = L"";
 	 DialogMasReadItemVar.VariableVarlistType = L"";
-	 
+	 ReadMonitorListPeriodicRunning = FALSE;
 }
 
 CPlc::CPlc(CPoint startPoint, CMainFrame* pFrame)
@@ -93,6 +93,7 @@ CPlc::CPlc(CPoint startPoint, CMainFrame* pFrame)
 	DialogMasReadItemVar.VariableVarlistName = L"";
 	DialogMasReadItemVar.VariableVarlistAdrress = L"";
 	DialogMasReadItemVar.VariableVarlistType = L"";
+	ReadMonitorListPeriodicRunning = FALSE;
 }
 
 
@@ -911,66 +912,7 @@ HRESULT CPlc::Read_MonitorList()
 			AfxMessageBox(L"Selectron data type conversion not known.");
 			break;
 
-		}
-
-		/*
-         
-
-		//-----------------------------------------------
-		switch (ItemList[i].uiDataType)
-		{
-			case BIT1:
-			{
-				memcpy(&(ItemList[i].value.boolValue), pData, sizeof(ItemList[i].value.boolValue));
-				pData += sizeof(ItemList[i].value.boolValue);
-				ItemList[i].m_pElement->syscomData.value.boolValue = ItemList[i].value.boolValue;
-				iTempVar = static_cast<bool> (ItemList[i].value.boolValue);
-				babTempvar = static_cast<bool> (iTempVar);
-				sTempVar.Format(_T("%d"), babTempvar);
-				ItemList[i].m_pElement->setValue(sTempVar);
-				break;
-			}
-		  case BIT8:
-			{
-				memcpy(&(ItemList[i].value.byteValue), pData, sizeof(ItemList[i].value.byteValue));
-				pData += sizeof(ItemList[i].value.byteValue);
-				ItemList[i].m_pElement->syscomData.value.byteValue = ItemList[i].value.byteValue;
-				iTempVar = static_cast<char> (ItemList[i].value.byteValue);				
-				cabTempvar = static_cast<char> (iTempVar);
-				sTempVar.Format(_T("%d"), cabTempvar);
-				ItemList[i].m_pElement->setValue(sTempVar);
-				break;
-			}
-		  case BIT16:
-		  {
-			  memcpy(&(ItemList[i].value.shortValue), pData, sizeof(ItemList[i].value.shortValue));
-			  pData += sizeof(ItemList[i].value.shortValue);
-			  ItemList[i].m_pElement->syscomData.value.shortValue = ItemList[i].value.shortValue;
-			  iTempVar = static_cast<short> (ItemList[i].value.shortValue);
-			  nabTempVar = static_cast<short> (iTempVar);
-			  sTempVar.Format(_T("%d"), nabTempVar);
-			  ItemList[i].m_pElement->setValue(sTempVar);
-			  break;
-		  }
-		  case BIT32:
-		  {
-			  memcpy(&(ItemList[i].value.floatValue), pData, sizeof(ItemList[i].value.floatValue));
-			  pData += sizeof(ItemList[i].value.floatValue);
-			  ItemList[i].m_pElement->syscomData.value.floatValue = ItemList[i].value.floatValue;
-			  iTempVar = static_cast<float> (ItemList[i].value.floatValue);
-			  fTempvar = static_cast<float>(iTempVar);
-			  sTempVar.Format(_T("%.2f"), fTempvar);
-			  ItemList[i].m_pElement->setValue(sTempVar);
-			  break;
-		  }
-
-		}
-		
-		CString a;
-		TCHAR buf[32];
-		_itow_s(iTempVar, buf, 10);
-		MessageBoxW(NULL,(LPCWSTR) buf, NULL, MB_OK); */
-		
+		}		
 	}
 	//m_pElement->updateValue() tady se bude volat funkce v CElement class updatujici hodnotu Elementu
 	return hResult;
@@ -1042,4 +984,46 @@ void CPlc::getDialogMasReadItemValues(CString & name, CString & address, CString
 	address = DialogMasReadItemVar.VariableVarlistAdrress;
 	type = DialogMasReadItemVar.VariableVarlistType;
 
+}
+
+void CPlc::Read_MonitorListPeriodicStart(INT period)
+{
+
+	if (ReadMonitorListPeriodicRunning == FALSE)
+	{
+		ReadMonitorListPeriodicRunning = TRUE;
+		//std::shared_ptr<PlcBackgroundReadWrite> PlcBackgroundReadWritePtr;
+		//PlcBackgroundReadWritePtr = std::make_shared<PlcBackgroundReadWrite>(this);
+		//AfxBeginThread(ReadMonitorListPeriodicProc, PlcBackgroundReadWritePtr.get());
+		//PlcBackgroundReadWritePtr = new PlcBackgroundReadWrite(this);
+		PlcBackgroundReadWritePars.pSelected = (CElement*) this;
+		AfxBeginThread(ReadMonitorListPeriodicProc, &PlcBackgroundReadWritePars);
+	}
+
+}
+void CPlc::Read_MonitorListPeriodicStop()
+{
+
+
+
+
+}
+
+void CPlc::InformPlc(BOOL in)
+
+{
+	ReadMonitorListPeriodicRunning = in;
+
+}
+
+UINT ReadMonitorListPeriodicProc(LPVOID pParam)
+{
+	PlcBackgroundReadWriteStruct *dataPtr = static_cast<PlcBackgroundReadWriteStruct*> (pParam);
+
+	//CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
+	CPlc * pPlc = dynamic_cast<CPlc*>(dataPtr->pSelected);
+	pPlc->Read_MonitorList();
+	(pPlc->getMainWindowCwnd())->SendMessage(WM_REFRESHPICTURE, 0, 0);
+	pPlc->InformPlc(FALSE);
+	return 0;
 }
