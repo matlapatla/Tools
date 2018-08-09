@@ -109,7 +109,7 @@ INT CBulb::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT
 	bmDC.DeleteDC();
 
 	pDC->SetBkMode(TRANSPARENT);
-	pDC->SetTextColor(RGB(255, 0, 255));
+	pDC->SetTextColor(RGB(0, 0, 0));
 	CPoint ptScroll = ((CScrollView*)pView)->GetScrollPosition();
 	//pDC->TextOut(m_StartPoint.x, m_StartPoint.y + 70, CString(_T("Bulb = " + sValue)));
 	pDC->TextOut(m_StartPoint.x, m_StartPoint.y + 70, CString((CElement::sElementName + " = " + sValue)));

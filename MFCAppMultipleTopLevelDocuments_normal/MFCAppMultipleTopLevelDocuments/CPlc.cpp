@@ -469,9 +469,9 @@ int CPlc::callMASReadItem(CString varAbsAddr, CString SelectronVarType, CString&
 		//ULONG ulAbsAddress;
 
 		BOOL babTempvar;
-		CHAR cabTempvar;
-		SHORT nabTempVar;
-		INT iabTempVar;
+		UCHAR cabTempvar;
+		USHORT nabTempVar;
+		UINT iabTempVar;
 		CHAR caiTempvar;
 		SHORT naiTempVar;
 		INT iaiTempVar;
@@ -513,15 +513,16 @@ int CPlc::callMASReadItem(CString varAbsAddr, CString SelectronVarType, CString&
 					sData.Format(_T("%d"), babTempvar);
 					break;
 				case svtBYTE:
-					cabTempvar = static_cast<char> (*piData);
+					//cabTempvar = static_cast<char> (*piData); fault Byte vale 240 casted to -16
+					cabTempvar = static_cast<UCHAR> (*piData);
 					sData.Format(_T("%d"), cabTempvar);
 					break;
 				case svtWORD:
-					nabTempVar = static_cast<short> (*piData);
+					nabTempVar = static_cast<unsigned short> (*piData);
 					sData.Format(_T("%d"), nabTempVar);
 					break;
 				case svtDWORD:
-					iabTempVar = static_cast<int> (*piData);
+					iabTempVar = static_cast<unsigned int> (*piData);
 					sData.Format(_T("%d"), iabTempVar);
 					break;
 					//.ai.... stand for the ANY_INT data types
@@ -734,9 +735,9 @@ HRESULT CPlc::Read_MonitorList()
 	CString sTempVar;
 
 	BOOL babTempvar;
-	CHAR cabTempvar;
-	SHORT nabTempVar;
-	INT iabTempVar;
+	UCHAR cabTempvar;
+	USHORT nabTempVar;
+	UINT iabTempVar;
 	CHAR caiTempvar;
 	SHORT naiTempVar;
 	INT iaiTempVar;
@@ -799,7 +800,7 @@ HRESULT CPlc::Read_MonitorList()
 			memcpy(&(ItemList[i].value.byteValue), pData, sizeof(ItemList[i].value.byteValue));
 			pData += sizeof(ItemList[i].value.byteValue);
 			ItemList[i].m_pElement->syscomData.value.byteValue = ItemList[i].value.byteValue;
-			cabTempvar = static_cast<char> (ItemList[i].value.byteValue);
+			cabTempvar = static_cast<UCHAR> (ItemList[i].value.byteValue);
 			sTempVar.Format(_T("%d"), cabTempvar);
 			ItemList[i].m_pElement->setValue(sTempVar);
 			break;
@@ -809,7 +810,7 @@ HRESULT CPlc::Read_MonitorList()
 			memcpy(&(ItemList[i].value.shortValue), pData, sizeof(ItemList[i].value.shortValue));
 			pData += sizeof(ItemList[i].value.shortValue);
 			ItemList[i].m_pElement->syscomData.value.shortValue = ItemList[i].value.shortValue;
-			nabTempVar = static_cast<short> (ItemList[i].value.shortValue);
+			nabTempVar = static_cast<USHORT> (ItemList[i].value.shortValue);
 			sTempVar.Format(_T("%d"), nabTempVar);
 			ItemList[i].m_pElement->setValue(sTempVar);
 			break;
@@ -821,7 +822,7 @@ HRESULT CPlc::Read_MonitorList()
 			memcpy(&(ItemList[i].value.intValue), pData, sizeof(ItemList[i].value.intValue));
 			pData += sizeof(ItemList[i].value.intValue);
 			ItemList[i].m_pElement->syscomData.value.intValue = ItemList[i].value.intValue;
-			iabTempVar = static_cast<int> (ItemList[i].value.intValue);
+			iabTempVar = static_cast<UINT> (ItemList[i].value.intValue);
 			sTempVar.Format(_T("%d"), iabTempVar);
 			ItemList[i].m_pElement->setValue(sTempVar);
 			break;
