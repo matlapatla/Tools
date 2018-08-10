@@ -1029,7 +1029,7 @@ UINT ReadMonitorListPeriodicProc(LPVOID pParam)
 		//int WaitObject = WaitForSingleObject(, 100);  //Wait 30sec for a cable interruption 
 		//if (WaitObject == WAIT_TIMEOUT)
 
-		Sleep(100);
+		Sleep(200);
 		{
 			pPlc->Read_MonitorList();
 			refreshPictCounter++;
