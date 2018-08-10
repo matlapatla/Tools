@@ -997,6 +997,7 @@ void CPlc::Read_MonitorListPeriodicStart(INT period)
 		//AfxBeginThread(ReadMonitorListPeriodicProc, PlcBackgroundReadWritePtr.get());
 		//PlcBackgroundReadWritePtr = new PlcBackgroundReadWrite(this);
 		PlcBackgroundReadWritePars.pSelected = (CElement*) this;
+		PlcBackgroundReadWritePars.stopReadMonitorListPeriodic = FALSE;
 		AfxBeginThread(ReadMonitorListPeriodicProc, &PlcBackgroundReadWritePars);
 	}
 
@@ -1004,7 +1005,7 @@ void CPlc::Read_MonitorListPeriodicStart(INT period)
 void CPlc::Read_MonitorListPeriodicStop()
 {
 
-
+	PlcBackgroundReadWritePars.stopReadMonitorListPeriodic = TRUE;
 
 
 }
@@ -1020,10 +1021,25 @@ UINT ReadMonitorListPeriodicProc(LPVOID pParam)
 {
 	PlcBackgroundReadWriteStruct *dataPtr = static_cast<PlcBackgroundReadWriteStruct*> (pParam);
 
-	//CPlc * pPlc = dynamic_cast<CPlc*>(m_pPlcSelected.get());
 	CPlc * pPlc = dynamic_cast<CPlc*>(dataPtr->pSelected);
-	pPlc->Read_MonitorList();
-	(pPlc->getMainWindowCwnd())->SendMessage(WM_REFRESHPICTURE, 0, 0);
+
+	int refreshPictCounter = 0;
+	while (!dataPtr->stopReadMonitorListPeriodic)
+	{
+		//int WaitObject = WaitForSingleObject(, 100);  //Wait 30sec for a cable interruption 
+		//if (WaitObject == WAIT_TIMEOUT)
+
+		Sleep(100);
+		{
+			pPlc->Read_MonitorList();
+			refreshPictCounter++;
+			if (refreshPictCounter >=  5)
+			{
+				refreshPictCounter = 0;
+				(pPlc->getMainWindowCwnd())->PostMessage(WM_REFRESHPICTURE, 0, 0);
+			}
+		}
+	}
 	pPlc->InformPlc(FALSE);
 	return 0;
 }

@@ -24,6 +24,7 @@ static struct lifeGuardStruct {
 static struct PlcBackgroundReadWriteStruct {
 
 	CElement* pSelected;
+	BOOL stopReadMonitorListPeriodic;
 } PlcBackgroundReadWritePars;
 
 class CPlc :
