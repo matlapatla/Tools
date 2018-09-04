@@ -1033,7 +1033,7 @@ UINT ReadMonitorListPeriodicProc(LPVOID pParam)
 		{
 			pPlc->Read_MonitorList();
 			refreshPictCounter++;
-			if (refreshPictCounter >=  5)
+			if (refreshPictCounter >=  1)
 			{
 				refreshPictCounter = 0;
 				(pPlc->getMainWindowCwnd())->PostMessage(WM_REFRESHPICTURE, 0, 0);

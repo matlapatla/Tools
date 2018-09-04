@@ -99,7 +99,7 @@ void CElementDialog::OnBnClickedCancel()
 {
 	// TODO: Add your control notification handler code here
 	m_pPlcSelected->setDlgRunning(false);
-	InvalidateRect(nullptr);
+	InvalidateRect(nullptr, FALSE);
 	UpdateWindow();
 	CDialogEx::OnCancel();
 }
