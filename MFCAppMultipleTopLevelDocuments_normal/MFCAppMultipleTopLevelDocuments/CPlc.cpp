@@ -760,10 +760,13 @@ HRESULT CPlc::Read_MonitorList()
 	hResult = MAS_ReadMonitorList(server, &ReadMonList, NULL, timeOut);
 	BYTE * pData = ReadMonList.Data;
 	//Copy data to the items
+	CRectsToRedraw.clear();
 	for (int i = 0; i< itemCount; i++)
 	{
 		//-----------------------------------------------
-	  
+		
+		CRectsToRedraw.push_back(ItemList[i].m_pElement->GetEnclosingRect());
+
 		switch (ItemList[i].dtDataType)
 		{
 		case svtREAL:
@@ -1036,7 +1039,8 @@ UINT ReadMonitorListPeriodicProc(LPVOID pParam)
 			if (refreshPictCounter >=  1)
 			{
 				refreshPictCounter = 0;
-				(pPlc->getMainWindowCwnd())->PostMessage(WM_REFRESHPICTURE, 0, 0);
+				
+				(pPlc->getMainWindowCwnd())->PostMessage(WM_REFRESHPICTURE, (WPARAM) &(pPlc->CRectsToRedraw), 0);
 			}
 		}
 	}

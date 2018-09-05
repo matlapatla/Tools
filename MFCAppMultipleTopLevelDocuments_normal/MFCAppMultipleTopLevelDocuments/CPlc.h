@@ -2,6 +2,7 @@
 #include "CElement.h"
 #include "SysComServer.h"
 #include "CVarlistFile.h"
+//#include "MFCAppMultipleTopLevelDocumentsView.h"
 #include <memory> // for std::shared_ptr
 
 
@@ -120,6 +121,8 @@ public:
 	INT timeOutLifeGuard = 5000;
 	enum plcStatus_t { unknownPlc, notConnectedPlc, connectedPlc, lifeGuardPlcOK, lifeGuardPlcNOK, lifeGuardPlcDsbl };
 	plcStatus_t m_plcStatus;
+
+	std::list<CRect> CRectsToRedraw;
 
 protected:	
 	CString m_sIconFileNameConnected;
