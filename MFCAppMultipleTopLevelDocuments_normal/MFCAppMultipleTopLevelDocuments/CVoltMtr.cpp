@@ -89,9 +89,12 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 	BITMAP  bi;
 	bmp.GetBitmap(&bi);
 	((CScrollView*)pView)->OnPrepareDC(&aDC);
+	((CScrollView*)pView)->OnPrepareDC(pDC);
 	RECT point{ m_StartPoint.x , m_StartPoint.y, m_StartPoint.x + iXstep, m_StartPoint.y + iYstep };
+	RECT point1{ m_StartPoint.x , m_StartPoint.y, m_StartPoint.x + iXstep, m_StartPoint.y + iYstep };
 	aDC.LPtoDP(&point);
-	dc.StretchBlt(point.left, point.top, (point.right - point.left), (point.bottom - point.top), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
+	//pDC->LPtoDP(&point1);
+	dc.StretchBlt(point.left+1, point.top+1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
 	//dc.StretchBlt(point.left, point.top, (point.right - point.left), (point.bottom - point.top), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, PATCOPY);
 	bmp.Detach();
 	bmDC.SelectObject(pOldbmp);
@@ -103,8 +106,9 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 	CPen aPen;
 	aPen.CreatePen(PS_SOLID, m_PenWidth, m_Color);
 	CPen* pOldPen{ pDC->SelectObject(&aPen) };
-	pDC->MoveTo(m_StartPoint.x + 25, m_StartPoint.y + 25);
-
+	//pDC->MoveTo(m_StartPoint.x + 25, m_StartPoint.y + 25);
+	//pDC->DPtoLP(&point1);
+	pDC->MoveTo(point1.left + 25, point1.top + 25);
 
 	//signed __int64 i64sValue;
 	//signed __int64 i64sLowestValue;
@@ -137,13 +141,14 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 	DOUBLE fx = 25 - (25 * (cos(fNormValue))); //offset of the centre
 
 	//pDC->LineTo(m_StartPoint.x + 25, m_StartPoint.y);
-	pDC->LineTo(m_StartPoint.x + static_cast<INT>(fx), m_StartPoint.y + static_cast<INT>(fy));
+	//pDC->LineTo(m_StartPoint.x + static_cast<INT>(fx), m_StartPoint.y + static_cast<INT>(fy));
+	pDC->LineTo(point1.left + static_cast<INT>(fx), point1.top + static_cast<INT>(fy));
 	pDC->SelectObject(&pOldPen);
 	
 	pDC->SetBkMode(TRANSPARENT);
 	pDC->SetTextColor(RGB(0, 0, 0));
 	CPoint ptScroll = ((CScrollView*)pView)->GetScrollPosition();
-	pDC->TextOut(m_StartPoint.x, m_StartPoint.y + 70, CString((CElement::sElementName + " = " + sValue)));
+	pDC->TextOut(point1.left, point1.top + 70, CString((CElement::sElementName + " = " + sValue)));
 
 	
 	if (xDlgRunning) this->drawMagentaBorders(pDC, iXstep, iYstep);

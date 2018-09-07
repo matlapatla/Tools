@@ -918,6 +918,7 @@ HRESULT CPlc::Read_MonitorList()
 		}		
 	}
 	//m_pElement->updateValue() tady se bude volat funkce v CElement class updatujici hodnotu Elementu
+	
 	return hResult;
 }
 
@@ -1032,7 +1033,7 @@ UINT ReadMonitorListPeriodicProc(LPVOID pParam)
 		//int WaitObject = WaitForSingleObject(, 100);  //Wait 30sec for a cable interruption 
 		//if (WaitObject == WAIT_TIMEOUT)
 
-		Sleep(200);
+		Sleep(50);
 		{
 			pPlc->Read_MonitorList();
 			refreshPictCounter++;
