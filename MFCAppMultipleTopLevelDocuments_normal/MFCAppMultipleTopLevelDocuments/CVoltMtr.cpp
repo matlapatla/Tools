@@ -21,7 +21,7 @@ CVoltMtr::CVoltMtr()
 		IMAGE_BITMAP, 0, 0,
 		LR_LOADFROMFILE | LR_CREATEDIBSECTION);
 
-
+	m_TypeOfElement = L"CVltMtr";
 	
 }
 
