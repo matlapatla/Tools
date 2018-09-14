@@ -59,7 +59,9 @@ void CGrid:: Draw(CDC* pDC, CWnd* pView, INT iXstep, INT iYstep, CRect* pRect)
 	//CRect rcClient(0, 0, 200, 354);
 	RECT rcClient{ 0, 0, 200, 354 };
 	//GetClientRect(rcClient);
-	aDC.LPtoDP(&rcClient);
+
+	//aDC.LPtoDP(&rcClient);
+	
 	pDC->SelectObject(&m_brushBack);
 	//pDC->PatBlt(0, 0, 200, 354, PATCOPY);
 	pDC->PatBlt(0, 0, rcClient.right, rcClient.bottom, PATCOPY);
