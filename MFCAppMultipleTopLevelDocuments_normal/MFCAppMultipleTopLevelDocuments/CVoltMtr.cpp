@@ -89,10 +89,10 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 	BITMAP  bi;
 	bmp.GetBitmap(&bi);
 	((CScrollView*)pView)->OnPrepareDC(&aDC);
-	((CScrollView*)pView)->OnPrepareDC(pDC);
+	//((CScrollView*)pView)->OnPrepareDC(pDC);
 	RECT point{ m_StartPoint.x , m_StartPoint.y, m_StartPoint.x + iXstep, m_StartPoint.y + iYstep };
 	RECT point1{ m_StartPoint.x , m_StartPoint.y, m_StartPoint.x + iXstep, m_StartPoint.y + iYstep };
-	aDC.LPtoDP(&point);
+	//aDC.LPtoDP(&point);
 	//pDC->LPtoDP(&point1);
 	pDC->StretchBlt(point.left + 1, point.top + 1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
 	//dc.StretchBlt(point.left+1, point.top+1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
@@ -101,7 +101,7 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 	bmDC.SelectObject(pOldbmp);
 	bmDC.DeleteDC();
 
-
+	
 	m_Color = RGB(200, 0, 100);
 	m_PenWidth = 3;
 	CPen aPen;
@@ -111,9 +111,7 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 	//pDC->DPtoLP(&point1);
 	pDC->MoveTo(point1.left + 25, point1.top + 25);
 
-	//signed __int64 i64sValue;
-	//signed __int64 i64sLowestValue;
-	//signed __int64 i64sHighestValue;
+
 	DOUBLE fValue;
 	DOUBLE fLowestValue;
 	DOUBLE fHighestValue;
@@ -124,15 +122,7 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 	fValue = _wtof(sValue);
 	fLowestValue = _wtof(sLowestValue);
 	fHighestValue = _wtof(sHighestValue);
-	//i64sValue  = _wtoi(sValue);
-	//i64sLowestValue = _wtoi(sLowestValue);
-	//i64sHighestValue = _wtoi(sHighestValue);
-	/*
-	_stscanf_s((LPCTSTR)sValue, _T("%I64"), &i64sValue);
-	_stscanf_s((LPCTSTR)sLowestValue, _T("%I64"), &i64sLowestValue);
-	_stscanf_s((LPCTSTR)sHighestValue, _T("%I64"), &i64sHighestValue);
-	*/
-
+	
 	fDelta = fValue - fLowestValue;
 	//fDelta = static_cast<FLOAT>(i64sValue - i64sLowestValue);
 	fNormConst = (fHighestValue - fLowestValue) / M_PI;
@@ -153,7 +143,9 @@ INT CVoltMtr::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, 
 
 	
 	if (xDlgRunning) this->drawMagentaBorders(pDC, iXstep, iYstep);
+	pDC->MoveTo(point1.left, point1.top);
 
+	
 
 	m_EnclosingRect = CRect{
 		(std::min)(m_StartPoint.x, m_StartPoint.x + iXstep), (std::min)(m_StartPoint.y, m_StartPoint.y + iYstep),

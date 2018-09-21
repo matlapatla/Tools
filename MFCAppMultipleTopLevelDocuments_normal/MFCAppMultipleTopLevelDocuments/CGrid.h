@@ -18,6 +18,7 @@ protected:
 	int m_iYstep = 50;
 	CBitmap m_bmpBack;
 	CBrush m_brushBack;
+	BOOL bRet;
 
 };
 

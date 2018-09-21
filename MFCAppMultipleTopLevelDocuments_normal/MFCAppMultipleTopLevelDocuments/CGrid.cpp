@@ -4,6 +4,7 @@
 
 CGrid::CGrid()
 {
+	 bRet = m_bmpBack.LoadBitmap(IDB_BITMAP_TRAM);
 }
 
 
