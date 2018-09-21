@@ -89,7 +89,8 @@ INT CSwitch::Draw(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT iYst
 	((CScrollView*) pView)->OnPrepareDC(&aDC);
 	RECT point{ m_StartPoint.x , m_StartPoint.y, m_StartPoint.x + iXstep, m_StartPoint.y + iYstep };
 	aDC.LPtoDP(&point);
-	dc.StretchBlt(point.left + 1, point.top + 1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
+	pDC->StretchBlt(point.left + 1, point.top + 1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
+	//dc.StretchBlt(point.left + 1, point.top + 1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
 	bmp.Detach();
 
 	m_EnclosingRect = CRect{
@@ -152,7 +153,8 @@ INT CSwitch::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, I
 	((CScrollView*)pView)->OnPrepareDC(&aDC);
 	RECT point{ m_StartPoint.x , m_StartPoint.y, m_StartPoint.x + iXstep, m_StartPoint.y + iYstep };
 	aDC.LPtoDP(&point);
-	dc.StretchBlt(point.left + 1, point.top + 1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
+	pDC->StretchBlt(point.left + 1, point.top + 1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
+	//dc.StretchBlt(point.left + 1, point.top + 1, (point.right - point.left - 1), (point.bottom - point.top - 1), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
 	bmp.Detach();
 
 	bmDC.SelectObject(pOldbmp);

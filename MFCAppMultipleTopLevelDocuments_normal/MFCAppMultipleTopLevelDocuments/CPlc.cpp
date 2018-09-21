@@ -316,7 +316,8 @@ INT CPlc::DrawElement(CDC* pDC, CWnd* pView, CPoint startPoint, INT iXstep, INT 
 	((CScrollView*)pView)->OnPrepareDC(&aDC);
 	RECT point{ m_StartPoint.x , m_StartPoint.y, m_StartPoint.x + iXstep, m_StartPoint.y + iYstep };
 	aDC.LPtoDP(&point);
-	dc.StretchBlt(point.left, point.top, (point.right - point.left), (point.bottom - point.top), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
+	pDC->StretchBlt(point.left, point.top, (point.right - point.left), (point.bottom - point.top), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
+	//dc.StretchBlt(point.left, point.top, (point.right - point.left), (point.bottom - point.top), &bmDC, 0, 0, bi.bmWidth, bi.bmHeight, SRCCOPY);
 	bmp.Detach();
 
 	m_EnclosingRect = CRect{
