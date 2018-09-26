@@ -16,6 +16,8 @@ VariableControl::VariableControl(CWnd* pParent /*=NULL*/)
 	//, m_SliderValue(0)
 	, m_SliderVal(0)
 	, m_RequestedValue(_T(""))
+	, m_lowThrHld(_T(""))
+	, m_highThrHld(_T(""))
 {
 
 }
@@ -31,6 +33,8 @@ void VariableControl::DoDataExchange(CDataExchange* pDX)
 	//DDX_Slider(pDX, IDC_SLIDER2, m_SliderValue);
 	DDX_Slider(pDX, IDC_SLIDER2, m_SliderVal);
 	DDX_Text(pDX, IDC_EDIT1, m_RequestedValue);
+	DDX_Text(pDX, IDC_STATICLOWTHRHLD, m_lowThrHld);
+	DDX_Text(pDX, IDC_STATICHIGHTHRHLD, m_highThrHld);
 }
 
 
@@ -92,13 +96,17 @@ BOOL VariableControl::OnInitDialog() {
 	m_SliderCtrl.SetRange((int)ui64lowestVal, (int)ui64highestVal, TRUE);
 	pElement->getValue(currentVal);
 	m_RequestedValue = currentVal;
+	m_lowThrHld = lowestVal;
+	m_highThrHld = highestVal;
 	if (currentVal == "")
 	{
+		m_SliderVal = (int)ui64lowestVal;
 		m_SliderCtrl.SetPos((int)ui64lowestVal);
 	}
 	else
 	{
 		_stscanf_s((LPCTSTR)currentVal, _T("%I64u"), &ui64currentVal);
+		m_SliderVal = (int)ui64currentVal;
 		m_SliderCtrl.SetPos((int)ui64currentVal);
 	}
 	//m_SliderValue.Format(_T("%d"), 0);
@@ -109,4 +117,9 @@ BOOL VariableControl::OnInitDialog() {
 void VariableControl::OnBnClickedButton1Forcevalue()
 {
 	// TODO: Add your control notification handler code here
+	UpdateData(TRUE);
+	pElement->getElementAddress(ElementAddress);
+	pElement->getVarType(VarType);
+	std::static_pointer_cast <CPlc> (pPlc)->callMASForceAddAbsolute(ElementAddress,VarType, m_RequestedValue);
+	
 }

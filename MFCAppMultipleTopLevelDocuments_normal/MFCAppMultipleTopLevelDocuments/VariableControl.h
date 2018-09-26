@@ -2,6 +2,7 @@
 #include "afxcmn.h"
 #include <memory.h>
 #include "CElement.h"
+#include "CPlc.h"
 
 // VariableControl dialog
 
@@ -25,6 +26,8 @@ protected:
 	CString highestVal;
 	CString currentVal;
 	CString requestedVal;
+	CString ElementAddress;
+	CString VarType;
 
 	unsigned __int64 ui64lowestVal;
 	unsigned __int64 ui64highestVal;
@@ -42,4 +45,6 @@ public:
 	std::shared_ptr<CElement> pPlc;
 	CString m_RequestedValue;
 	afx_msg void OnBnClickedButton1Forcevalue();
+	CString m_lowThrHld;
+	CString m_highThrHld;
 };
